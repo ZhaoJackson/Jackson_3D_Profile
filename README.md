@@ -3,7 +3,7 @@
 A modern, interactive 3D portfolio website showcasing my work as a Data Scientist and AI Researcher. Built with React, Three.js, and cutting-edge web technologies to create an immersive user experience.
 
 ## 🚀 Live Demo
-**[View Live Portfolio](https://zhaojackson.github.io/3d_profile/)** - Deployed on GitHub Pages
+**[View Live Portfolio](https://zhaojackson.github.io/Jackson_3D_Profile/)** - Deployed on GitHub Pages
 
 ## 👨‍💻 About Me
 Hi there! 👋 I'm **Jackson Zhao**, a data scientist and AI researcher passionate about building innovative technologies that create meaningful social impact. I hold a Master's in Quantitative Methods from Columbia University and have worked with organizations like the United Nations on global AI-driven projects.
@@ -45,8 +45,8 @@ This portfolio showcases:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ZhaoJackson/3d_profile.git
-   cd 3d_profile
+   git clone https://github.com/ZhaoJackson/Jackson_3D_Profile.git
+   cd Jackson_3D_Profile
    ```
 
 2. **Install dependencies**
@@ -135,7 +135,7 @@ src/
 - **Email**: [zz3119@columbia.edu](mailto:zz3119@columbia.edu)
 - **LinkedIn**: [linkedin.com/in/zichenzhao6](https://www.linkedin.com/in/zichenzhao6/)
 - **GitHub**: [github.com/ZhaoJackson](https://github.com/ZhaoJackson)
-- **Portfolio**: [zhaojackson.github.io/3d_profile](https://zhaojackson.github.io/3d_profile/)
+- **Portfolio**: [zhaojackson.github.io/Jackson_3D_Profile](https://zhaojackson.github.io/Jackson_3D_Profile/)
 
 ---
 
