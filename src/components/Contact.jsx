@@ -42,7 +42,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Jackson Zhao",
           from_email: form.email,
-          to_email: "zz3119@columbia.edu",
+          to_email: "zichenzhao2022@gmail.com",
           message: form.message,
         },
         '2wJ7rQYd6pS3rioDCt15i',
@@ -136,7 +136,7 @@ const Contact = () => {
         <div className="mt-5 contact__options">
           <article className="contact__option">
             <MdEmail />
-            <a href="mailto:zz3119@columbia.edu" target="_blank" className="blue-text-gradient">zz3119@columbia.edu</a>
+            <a href="mailto:zichenzhao2022@gmail.com" target="_blank" className="blue-text-gradient">zichenzhao2022@gmail.com</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp />
