@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -8,6 +8,13 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 const Tech = () => {
+  // Randomly select technologies - reduced to 12 to avoid WebGL context limit
+  const displayedTechnologies = useMemo(() => {
+    const shuffled = [...technologies].sort(() => 0.5 - Math.random());
+    // Select 12 random technologies to avoid WebGL context issues
+    return shuffled.slice(0, 12);
+  }, []);
+
   return (
     <>
       <motion.div id="tech" variants={textVariant()}>
@@ -16,7 +23,7 @@ const Tech = () => {
         </h2>
       </motion.div>
     <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
+      {displayedTechnologies.map((technology) => (
         <div style={{height: '5rem', width: "5rem"}} key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>

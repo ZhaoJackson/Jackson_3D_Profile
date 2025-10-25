@@ -24,6 +24,30 @@ import xneuronz from "./logo.png";
 import nyu from "./project/nyu.jpg";
 import bits from "./project/bits.jpg";
 
+// Import new technology icons
+import flask from "./flask.jpeg";
+import fastapi from "./fastapi.png";
+import bitbucket from "./bitbucket.png";
+import airflow from "./airflow.jpeg";
+import langchain from "./langchain.jpeg";
+import ollama from "./ollama.png";
+import rag from "./rag.jpeg";
+import streamlit from "./streamlit.png";
+import vercel from "./vercel.png";
+import retool from "./retool.jpeg";
+import chainlit from "./chainlit.jpeg";
+import roboflow from "./roboflow.png";
+import tg from "./tg.png";
+import tableau from "./tableau.png";
+import powerbi from "./powerbi.png";
+import spss from "./spss.jpeg";
+import excel from "./excel.png";
+import anova from "./anova.png";
+import sp from "./sp.png";
+import eeg from "./eeg.png";
+import siop from "./siop.png";
+import pp from "./pp.png";
+
 export {
   logo,
   backend,
@@ -46,4 +70,26 @@ export {
   nyu,
   bits,
   kani,
+  flask,
+  fastapi,
+  bitbucket,
+  airflow,
+  langchain,
+  ollama,
+  rag,
+  streamlit,
+  vercel,
+  retool,
+  chainlit,
+  roboflow,
+  tg,
+  tableau,
+  powerbi,
+  spss,
+  excel,
+  anova,
+  sp,
+  eeg,
+  siop,
+  pp,
 };

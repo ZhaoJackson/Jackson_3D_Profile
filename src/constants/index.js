@@ -1,6 +1,9 @@
 import {
     javascript,html,css,reactjs,tailwind,nodejs,mongodb,git,threejs,
     hf,xneuronz,holopin,nyu,bits,logo,
+    flask,fastapi,bitbucket,airflow,langchain,ollama,rag,streamlit,
+    vercel,retool,chainlit,roboflow,tg,tableau,powerbi,spss,excel,
+    anova,sp,eeg,siop,pp,
   } from "../assets";
 
   import udemy from "../assets/udemy.jpg"
@@ -14,15 +17,6 @@ import {
       icon: udemy,
     }
   ];
-
-  const achievements = [
-    {
-      title: "DePauw Academic Merit Scholarship, 2018 - 2023. ",
-    },
-    {
-      title: "DePauw Dean's List The Dean's List with GPA of 3.5 or higher on a 4.0 scale, 2018 - 2023. ",
-    }
-  ]
 
   const research = [
     {
@@ -49,512 +43,537 @@ import {
     }
   ]
   
+  // All technologies combined for random selection
   const technologies = [
+    // Programming Languages
     {
       name: "Python",
-      icon: "https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
     },
     {
-      name: "PyTorch",
-      icon: "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000",
+      name: "R",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg",
     },
     {
-      name: "Tensorflow",
-      icon: "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000",
+      name: "Java",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
     },
     {
-      name:"R",
-      icon: "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000",
+      name: "HTML5",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
     },
     {
-      name:"AWS",
+      name: "CSS3",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+    },
+    
+    // Web Frameworks
+    {
+      name: "Flask",
+      icon: flask,
+    },
+    {
+      name: "FastAPI",
+      icon: fastapi,
+    },
+    
+    // Databases
+    {
+      name: "MySQL",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+    },
+    
+    // Cloud Platforms
+    {
+      name: "AWS",
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     },
     {
-      name: "OpenCV",
-      icon: "https://img.icons8.com/?size=100&id=bpip0gGiBLT1&format=png&color=000000",
+      name: "Azure",
+      icon: "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg",
     },
+    {
+      name: "GCP",
+      icon: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
+    },
+    
+    // DevOps & Tools
+    {
+      name: "Docker",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+    },
+    {
+      name: "Git",
+      icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+    },
+    {
+      name: "Bitbucket",
+      icon: bitbucket,
+    },
+    {
+      name: "Airflow",
+      icon: airflow,
+    },
+    
+    // AI/ML Frameworks
     {
       name: "Hugging Face",
-      icon: "https://img.icons8.com/?size=100&id=sop9ROXku5bb&format=png&color=000000",
+      icon: "https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png",
     },
     {
-      name: "LlamaIndex",
-      icon: "https://asset.brandfetch.io/id6a4s3gXI/idncpUsO_z.jpeg",
+      name: "LangChain",
+      icon: langchain,
     },
     {
-      name: "Langchain",
-      icon: "https://lancedb.github.io/lancedb/assets/langchain.png",
+      name: "Ollama",
+      icon: ollama,
     },
     {
-      name: "git",
-      icon: git,
+      name: "OpenCV",
+      icon: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg",
     },
     {
-      name:"MySql",
-      icon: "https://img.icons8.com/color/480/000000/mysql-logo.png",
+      name: "TensorFlow",
+      icon: "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",
+    },
+    {
+      name: "PyTorch",
+      icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg",
+    },
+    
+    // Development Tools
+    {
+      name: "n8n",
+      icon: "https://n8n.io/favicon.ico",
+    },
+    {
+      name: "REST API",
+      icon: "https://restfulapi.net/wp-content/uploads/rest.png",
+    },
+    {
+      name: "RAG",
+      icon: rag,
+    },
+    {
+      name: "Streamlit",
+      icon: streamlit,
+    },
+    {
+      name: "Vercel",
+      icon: vercel,
+    },
+    {
+      name: "Retool",
+      icon: retool,
+    },
+    {
+      name: "Chainlit",
+      icon: chainlit,
+    },
+    {
+      name: "Roboflow",
+      icon: roboflow,
+    },
+    {
+      name: "Telegram",
+      icon: tg,
+    },
+    
+    // Data Analytics & Visualization
+    {
+      name: "Tableau",
+      icon: tableau,
+    },
+    {
+      name: "Power BI",
+      icon: powerbi,
+    },
+    {
+      name: "Databricks",
+      icon: "https://www.vectorlogo.zone/logos/databricks/databricks-icon.svg",
+    },
+    {
+      name: "SPSS",
+      icon: spss,
+    },
+    {
+      name: "Excel",
+      icon: excel,
+    },
+    {
+      name: "ANOVA",
+      icon: anova,
+    },
+    
+    // Psychology Domain
+    {
+      name: "Social Psychology",
+      icon: sp,
+    },
+    {
+      name: "Cognitive Psychology",
+      icon: "https://img.icons8.com/color/96/000000/brain.png",
+    },
+    {
+      name: "EEG",
+      icon: eeg,
+    },
+    {
+      name: "Evolutionary Psychology",
+      icon: "https://img.icons8.com/color/96/000000/dna-helix.png",
+    },
+    {
+      name: "I/O Psychology",
+      icon: siop,
+    },
+    {
+      name: "Positive Psychology",
+      icon: pp,
+    },
+    {
+      name: "Consumer Psychology",
+      icon: "https://pbs.twimg.com/profile_images/1625338757804093440/GfUHCd3O_400x400.jpg",
     },
   ];
 
 // ====== Category list  ======
   const list = [
     { 
-      id: "assistants", 
-      title: "Assistants & Chatbots" 
+      id: "mentalhealthAI", 
+      title: "Mental Health & AI" 
     },
     { 
-      id: "un",         
-      title: "UN, SDG & Analytics" 
+      id: "llm",         
+      title: "Large Language Models" 
     },
     { 
-      id: "vision",     
-      title: "Vision, Gesture & CV" 
-    },
-    { 
-      id: "webapps",    
-      title: "Web Apps & Tools" 
-    },
-    { 
-      id: "learning",   
-      title: "Learning Repos & Notes" 
-    },
-    { 
-      id: "coursework", 
-      title: "Academic Projects" 
-    },
-    { 
-      id: "misc",       
-      title: "Misc / Personal" 
+      id: "dataScienceAnalytics",     
+      title: "Data Science & Analytics" 
     },
   ];
 
 // ====== Assistants & Chatbots ======
-  export const assistantsProject = [
+  const mentalhealthAIProject = [
     {
-      name: "LLM-Axe_Chainlit_Chatbot",
+      name: "Machine-Driven Evaluation Framework for Suicide Prevention",
       description: 
-        "Chainlit copilot that retrieves with LLM-Axe and synthesizes with Llama3; persistent chat context.",
+        "AI chatbot evaluation benchmark for mental health and suicide prevention with rule-based ethical alignment, inclusivity scoring, and sentiment analysis.",
       tags: [
         { 
-          name: "Chainlit", 
+          name: "AI Ethics", 
           color: "blue-text-gradient" 
         }, 
         { 
-          name: "RAG", 
+          name: "Single-Turn Evaluation", 
           color: "green-text-gradient" 
         }, 
         { 
-          name: "Llama3", 
+          name: "Algorithmic Benchmarking", 
           color: "pink-text-gradient" 
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=960,format=auto/https://files.realpython.com/media/Python-3.14-Preview-Better-Syntax-Error-Messages_Watarmarked.ac1b2c644591.jpg",
-      source_link: "https://github.com/ZhaoJackson/LLM-Axe_Chainlit_Chatbot",
-      source_code_link: "https://github.com/ZhaoJackson/LLM-Axe_Chainlit_Chatbot",
-    },
-    {
-      name: "Text-Reference-AIChatbot",
-      description: 
-        "Reference-grounded chatbot focused on safe, ethical replies; hooks for ROUGE/METEOR evaluation.",
-      tags: [
-        { 
-          name: "Safety", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Evaluation", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "NLP", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Showcase-Ruff-Linter_Watermarked.71e600eb11de.jpg",
-      source_link: "https://github.com/ZhaoJackson/Text-Reference-AIChatbot",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Multiple-Inheritance-and-Mixins_Watermarked.1cfef28a6113.jpg",
       source_code_link: "https://github.com/ZhaoJackson/Text-Reference-AIChatbot",
     },
     {
-      name: "united_nations_web_chatbot",
+      name: "Web-Based Evaluation Product against AI Responses",
       description: 
-        "Web chatbot scaffold for UN information access and Q&A.",
+        "AI evaluation tool with suicidal prevention with automatic database for reinforcement learning with ethical alignment, inclusivity, complexity, and sentiment.",
       tags: [
         { 
-          name: "Web", 
+          name: "Drupal Framework", 
           color: "blue-text-gradient" 
         }, 
         { 
-          name: "Chatbot", 
+          name: "Suicide Prevention", 
           color: "green-text-gradient" 
         }, 
         { 
-          name: "UN",
+          name: "Reinforcement Learning", 
           color: "pink-text-gradient" 
-        },
+        }
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-3.14-Preview-REPL-Autocompletion-and-Highlighting_Watermarked.72f0b769acf1.jpg",
-      source_link: "https://github.com/ZhaoJackson/united_nations_web_chatbot",
-      source_code_link: "https://github.com/ZhaoJackson/united_nations_web_chatbot",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/A-Complete-Walkthrough-of-Pythons-Asyncio_Watermarked.5b6b9a01fdc9.jpg",
+      source_link: "http://crmforrealty.com/",
+      source_code_link: "https://github.com/ZhaoJackson/AI_Response_Evaluation_Benchmark",
     },
     {
-      name: "J.A.R.V.I.S",
+      name: "J . A . R . V . I . S",
       description: 
-        "Modular FastAPI assistant: Ollama LLM, Spotify mood player, Telegram hooks, I-Ching guidance.",
+        "AI-powered mental health assistant integrating Telegram, Spotify, and Ollama for therapeutic support through emotion analysis, philosophical wisdom, and music therapy",
       tags: [
-        { name: 
-          "FastAPI", 
-          color: "blue-text-gradient" 
-        }, 
         { 
           name: "Ollama", 
           color: "green-text-gradient"
         }, 
         { 
-          name: "Spotify API", 
+          name: "Spotify", 
           color: "pink-text-gradient" 
-        }
+        },
+        {
+          name: "Telegram",
+          color: "orange-text-gradient" 
+        },
+        {
+          name: "Music Therapy",
+          color: "red-text-gradient" 
+        },
+        {
+          name: "Philosophical Wisdom",
+          color: "green-text-gradient" 
+        },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Using-Pythons-.__dict__-to-Inspect-Object-Attributes_Watermarked.e648f20c0563.jpg",
-      source_link: "https://github.com/ZhaoJackson/J.A.R.V.I.S",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Modern-Web-Automation-With-Python-and-Selenium_Watermarked.08e8e08b976d.jpg",
       source_code_link: "https://github.com/ZhaoJackson/J.A.R.V.I.S",
     },
     {
-      name: "chatbot_automation",
+      name: "Huaman VS AI Game",
       description: 
-        "Automation to turn model outputs into PPT/CSV dashboards; reproducible reporting pipeline.",
+        "Interactive Turing Test Game: Can you tell which response is from a human and which is from AI? A gamified mental health awareness tool that challenges users to distinguish between human and AI-generated responses to mental health prompts.",
       tags: [
         { 
-          name: "Automation", 
+          name: "Turing Test", 
           color: "blue-text-gradient" 
         }, 
         { 
-          name: "pptx", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "CLI", 
+          name: "Vercel", 
           color: "pink-text-gradient" 
         }
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Single-and-a-Double-Leading-Underscore-in-Python-Names_Watermarked.e3bfbf1b525c.jpg",
-      source_link: "https://github.com/ZhaoJackson/chatbot_automation",
-      source_code_link: "https://github.com/ZhaoJackson/chatbot_automation",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/MySQL-and-Python_Watermarked.4353d1d57493.jpg",
+      source_link: "https://turing-app.vercel.app/",
+      source_code_link: "https://github.com/ZhaoJackson/Human_VS_AI_Game",
     },
     {
-      name: "Turing_APP",
+      name: "MBTI Personality Analysis",
       description: 
-        "Turing Test swipe game: ‘Human vs AI’ guessing with progress and retry UX.",
+        "MBTI mental health analysis with ML and Bayesian tuning for personalized treatment recommendations.",
       tags: [
         { 
-          name: "React", 
+          name: "Random Forest", 
           color: "blue-text-gradient" 
         }, 
-        { name: "Game", 
+        {
+          name: "Bayesian Tuning",
+          color: "green-text-gradient" 
+        },
+        {
+          name: "mbti",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/code_quality_img.73eae557a204.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/MBTI_Mental_Health",
+    },
+  ];
+
+// ====== Large Language Models ======
+  const llmProject = [
+    {
+      name: "United Nations Funding Intelligence Chatbot",
+      description:
+        "A comprehensive AI-powered analytics platform for UN JointWork Plans financial data analysis, featuring predictive modeling, anomaly detection, and intelligent chatbot assistance",
+      tags: [
+        { 
+          name: "streamlit", 
+          color: "blue-text-gradient" 
+        }, 
+        { 
+          name: "prompt engineering", 
           color: "green-text-gradient" 
         }, 
         { 
-          name: "UX", 
+          name: "modeling", 
           color: "pink-text-gradient" 
+        },
+        {
+          name: "OpenAI 4o & O1",
+          color: "purple-text-gradient" 
         }
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Multiple-Inheritance-and-Mixins_Watermarked.1cfef28a6113.jpg",
-      source_link: "https://github.com/ZhaoJackson/Turing_APP",
-      source_code_link: "https://github.com/ZhaoJackson/Turing_APP",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Monthly-Python-News_Blue_Watermarked.f56ede474cc7.jpg",
+      source_link: "https://united-nations-legacy.streamlit.app/",
+      source_code_link: "https://github.com/ZhaoJackson/United_Nations_Financial_Intelligence_Platform",
+    },
+    {
+      name: "PsyChat",
+      description: 
+        "Clinical trial application for benchmark evaluation of AI responses in multi-turn conversations. Guides users to understand AI interaction patterns and resolve personal mental health issues through therapeutic AI assistance.",
+      tags: [
+        { 
+          name: "Clinical Trial", 
+          color: "blue-text-gradient" 
+        }, 
+        { 
+          name: "Azure OpenAI",
+          color: "pink-text-gradient" 
+        },
+        { 
+          name: "Multi-Turn Conversations", 
+          color: "purple-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Requests-Library-Tutorial_Watermarked.3c9dfdc7b014.jpg",
+      source_link: "https://psychatbot.streamlit.app/",
+      source_code_link: "https://github.com/ZhaoJackson/PsyChat",
+    },
+    {
+      name: "News Summary Generation",
+      description:
+        "A comprehensive AI-powered analytics platform for UN JointWork Plans financial data analysis, featuring predictive modeling, anomaly detection, and intelligent chatbot assistance",
+      tags: [
+        { 
+          name: "streamlit", 
+          color: "blue-text-gradient" 
+        }, 
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-3.14-1-Preview-Template-Strings_Watermarked.1071657a0531.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/News_Operator",
+    },
+    {
+      name: "Weather Forecast APP",
+      description: "A Streamlit app that provides weather forecasts and AI-powered outfit recommendations using Llama3. Features 3-day weather forecasts, interactive dashboards, and intelligent clothing suggestions.",
+      tags: [
+        { 
+          name: "plotly", 
+          color: "blue-text-gradient" 
+        }, 
+        {
+          name: "streamlit",
+          color: "green-text-gradient" 
+        },
+        {
+          name: "ai-agent",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Factory-Method-Pattern-in-Python_Watermarked.6516a91d4d41.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/Personal_Weather_Report",
     },
   ];
 
 // ====== UN, SDG & Analytics ======
-  export const unProject = [
+  const dataScienceAnalyticsProject = [
     {
-      name: "United_Nations_Legacy",
-      description: 
-        "Legacy UN code: CF/CCA QA scripts, Peru/Panama reviews, and auto slide generation.",
+      name: "Survey Panel Analytics",
+      description:
+        "Interactive survey panel analytics dashboard with automated quality control pipeline. Built with R Shiny for demographic analysis, response density modeling, and real-time quality monitoring across 100+ survey projects.",
       tags: [
         { 
-          name: "UN QA", 
+          name: "airflow", 
           color: "blue-text-gradient" 
         }, 
         { 
-          name: "Python", 
+          name: "Shiny", 
           color: "green-text-gradient" 
         }, 
         { 
-          name: "pptx", 
+          name: "panel analysis", 
           color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Build-a-LLM-Application-with-LangChain_Watermarked.b9d023202ad2.jpg",
-      source_link: "https://github.com/ZhaoJackson/United_Nations_Legacy",
-      source_code_link: "https://github.com/ZhaoJackson/United_Nations_Legacy",
-    },
-  ];
-
-// ====== Vision, Gesture & CV ======
-  export const visionProject = [
-    {
-      name: "computer_vision",
-      description: 
-        "Computer vision experiments and utilities.",
-      tags: [
-        { 
-          name: "CV", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "PyTorch", 
-          color: "green-text-gradient"
-        }, 
-        { 
-          name: "OpenCV", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Bitwise-Operators-in-Python_Watermarked.85ff8fc6a931.jpg",
-      source_link: "https://github.com/ZhaoJackson/computer_vision",
-      source_code_link: "https://github.com/ZhaoJackson/computer_vision",
-    },
-    {
-      name: "air_gesture",
-      description: 
-        "Air-gesture interaction experiments (vision-based controls).",
-      tags: [
-        { 
-          name: "Gesture", 
-          color: "blue-text-gradient" 
         },
-        { 
-          name: "OpenCV", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "UX", 
-          color: "pink-text-gradient" 
+        {
+          name: "Business Intelligence",
+          color: "purple-text-gradient" 
         }
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Requests-Library-Tutorial_Watermarked.3c9dfdc7b014.jpg",
-      source_link: "https://github.com/ZhaoJackson/air_gesture",
-      source_code_link: "https://github.com/ZhaoJackson/air_gesture",
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Python-Print-Function_Watermarked.26066d64ad82.jpg",
+      source_link: "https://jacksonzzc.shinyapps.io/verasight-panel-insights/",
+      source_code_link: "https://github.com/ZhaoJackson/Survey_Panel_Analytics",
+    },
+    {
+      name: "Weakly Supervised Learning with Imaging Classification",
+      description: "Weak supervised learning on image classification with noisy labels.",
+      tags: [
+        { 
+          name: "cifar-10", 
+          color: "blue-text-gradient" 
+        }, 
+        {
+          name: "noisy labels",
+          color: "green-text-gradient" 
+        },
+        {
+          name: "image classification",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/Image-classification-Project",
+    },
+    {
+      name: "National Disaster Support Assistant",
+      description:
+        "A FEMA Disaster Support Assistant with disaster information retrieval and response guidance for disaster scenario simulation and user interaction.",
+      tags: [
+        { 
+          name: "Shiny", 
+          color: "blue-text-gradient" 
+        }, 
+        {
+          name: "Disaster Information Retrieval",
+          color: "green-text-gradient" 
+        },
+        {
+          name: "Disaster Response Guidance",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Polars-LazyFrame_Watermarked.4a66e20e0eaf.jpg",
+      source_link: "https://jacksonzzc.shinyapps.io/r_shiny_disaster_dashboard/",
+      source_code_link: "https://github.com/ZhaoJackson/National_Disaster_Support_Assistant",
+    },
+    {
+      name: "Algorithm Bias Mitigation Strategies",
+      description: "ML-based feature selection + conditional discrimination mitigation with unified evaluation and outputs.",
+      tags: [
+        { 
+          name: "preferential sampling", 
+          color: "blue-text-gradient" 
+        }, 
+        { 
+          name: "local massaging", 
+          color: "green-text-gradient" 
+        },
+        {
+          name: "compas score",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Set-Up-a-pyproject.toml-File-for-Your-Python-Project_Watermarked.51dc34160c1d.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/Algorithm_Bias_Mitigation",
+    },
+    {
+      name: "Recycle Object Detection",
+      description: "Benchmarking and deploying computer vision models for object detection on recycling and waste videos using Roboflow API, OpenCV, and MoviePy.",
+      tags: [
+        { 
+          name: "computer vision", 
+          color: "blue-text-gradient" 
+        }, 
+        {
+          name: "roboflow",
+          color: "green-text-gradient" 
+        },
+        {
+          name: "openCV",
+          color: "purple-text-gradient" 
+        },
+        {
+          name: "yolov8",
+          color: "pink-text-gradient" 
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Missing-Data-in-Polars_Watermarked.2f1923ed31ad.jpg",
+      source_code_link: "https://github.com/ZhaoJackson/Recycling_Object_Detection_Pipeline",
     },
   ];
 
-// ====== Web Apps & Tools ======
-  export const webProject = [
-    {
-      name: "text-extract-app",
-      description: 
-        "Lightweight text extraction tool (web).",
-      tags: [
-        { 
-          name: "Web", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "JavaScript", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "Utilities", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Build-a-LLM-Application-with-LangChain_Watermarked.b9d023202ad2.jpg",
-      source_link: "https://github.com/ZhaoJackson/text-extract-app",
-      source_code_link: "https://github.com/ZhaoJackson/text-extract-app",
-    },
-    {
-      name: "ds_case_study",
-      description: 
-        "Data-science case study website/pages.",
-      tags: [
-        { 
-          name: "HTML", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Web", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "Case Study", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-Does-isinstance-Work-in-Python_Watermarked.98828170897b.jpg",
-      source_link: "https://github.com/ZhaoJackson/ds_case_study",
-      source_code_link: "https://github.com/ZhaoJackson/ds_case_study",
-    },
-    {
-      name: "weather-report-app",
-      description: 
-        "14-20 day forecast + outfit recommender; CSV logging and Plotly/Streamlit visuals.",
-      tags: [
-        { 
-          name: "Plotly", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Streamlit", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "Pandas", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Showcase-Marimo-Notebook_Watermarked.91bd98028a40.jpg",
-      source_link: "https://github.com/ZhaoJackson/weather-report-app",
-      source_code_link: "https://github.com/ZhaoJackson/weather-report-app",
-    },
-  ];
-
-// ====== Learning Repos & Notes ======
-  export const learningProject = [
-    {
-      name: "MBTI_NLP_ML_Proj",
-      description: 
-        "NLP classification experiments and tooling on MBTI-style data.",
-      tags: [
-        { 
-          name: "NLP", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Scikit-learn", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "EDA", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/UPDATE-Python-Scope--the-LEGB-Rule-Resolving-Names-in-Your-Code_Watermarked.e72424ea8a24.jpg",
-      source_link: "https://github.com/ZhaoJackson/MBTI_NLP_ML_Proj",
-      source_code_link: "https://github.com/ZhaoJackson/MBTI_NLP_ML_Proj",
-    },
-  ];
-
-// ====== Academic Projects (ADS & others) ======
-  export const courseworkProject = [
-    {
-      name: "ADS-Spring2024-DS-Project5",
-      description: 
-        "ADS Spring ’24 Project 5 deliverables.",
-      tags: [
-        { 
-          name: "ADS", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Project", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "ML", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Monthly-Python-News_Blue_Watermarked.f56ede474cc7.jpg",
-      source_link: "https://github.com/ZhaoJackson/ADS-Spring2024-DS-Project5",
-      source_code_link: "https://github.com/ZhaoJackson/ADS-Spring2024-DS-Project5",
-    },
-    {
-      name: "ADS-Spring2024-Project4-MachineLearningFairness-Group12",
-      description: 
-        "Fairness in ML — group project assets.",
-      tags: [
-        { name: "Fairness", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "ML", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "ADS", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Factory-Method-Pattern-in-Python_Watermarked.6516a91d4d41.jpg",
-      source_link: "https://github.com/ZhaoJackson/ADS-Spring2024-Project4-MachineLearningFairness-Group12",
-      source_code_link: "https://github.com/ZhaoJackson/ADS-Spring2024-Project4-MachineLearningFairness-Group12",
-    },
-    {
-      name: "ADS-Spring2024-Project3-ClimSim-Group-5",
-      description: 
-        "Climate simulation project — Group 5 artifacts.",
-      tags: [
-        { 
-          name: "Climate", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "Simulation", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "ADS", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-3.14-1-Preview-Template-Strings_Watermarked.1071657a0531.jpg",
-      source_link: "https://github.com/ZhaoJackson/ADS-Spring2024-Project3-ClimSim-Group-5",
-      source_code_link: "https://github.com/ZhaoJackson/ADS-Spring2024-Project3-ClimSim-Group-5",
-    },
-    {
-      name: "Sentiment-Analysis-on-HappyDB",
-      description: 
-        "Sentiment analysis over HappyDB — experimentation and results.",
-      tags: [
-        { 
-          name: "Sentiment", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "NLP", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "Python", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Python-enumerate-Function-Guide_Watermarked.c803ed002afa.jpg",
-      source_link: "https://github.com/ZhaoJackson/Sentiment-Analysis-on-HappyDB",
-      source_code_link: "https://github.com/ZhaoJackson/Sentiment-Analysis-on-HappyDB",
-    },
-  ];
-
-// ====== Misc / Personal ======
-  export const miscProject = [
-    {
-      name: "Intelligent_Teaching_Product",
-      description: 
-        "LLM-assisted TA dashboard: analytics, auto-feedback, and group engagement metrics.",
-      tags: [
-        { 
-          name: "Analytics", 
-          color: "blue-text-gradient" 
-        }, 
-        { 
-          name: "LLM", 
-          color: "green-text-gradient" 
-        }, 
-        { 
-          name: "Education", 
-          color: "pink-text-gradient" 
-        }
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Coding-Challenge-Wordcount.18aa6928cf0b.jpg",
-      source_link: "https://github.com/ZhaoJackson/Intelligent_Teaching_Product",
-      source_code_link: "https://github.com/ZhaoJackson/Intelligent_Teaching_Product",
-    },
-  ];
 
   const experiences = [
     {
       title: "Machine Learning Engineer",
       company_name: "NYU Langone Health",
-      icon: "https://media.licdn.com/dms/image/v2/D4E0BAQEhE3VF_HYUoQ/company-logo_200_200/company-logo_200_200/0/1688567473350/nyulangonehealth_logo?e=1762387200&v=beta&t=uouIZXwEfUrtgDhlvktMKIXgRnfO2YauHkJx59oShyE",
+      icon: "https://pbs.twimg.com/profile_images/1675847757850988544/qDE0W0XQ_400x400.jpg",
       iconBg: "#57068C",
       date: "August 2025 - Current",
       link: "https://med.nyu.edu/departments-institutes/child-adolescent-psychiatry/",
@@ -570,7 +589,7 @@ import {
       icon: DSI,
       iconBg: "#00336c",
       date: "Jun 2024 - Current",
-      link: "https://www.dotlas.com",
+      link: "https://datascience.columbia.edu/",
       points: [
         "Utilized and fine-tuned BERT model in TensorFlow for sentiment analysis, alongside custom algorithms (synonym replacement, N-grams permutations, etc.), achieving 89.2% accuracy in identifying nuanced sentiment differences.",
         "Engineered data workflows on GCP, incorporating Google Cloud Databases to optimize data retrieval and management; developed data pipeline on 10K+ social work reference texts, comparing textual data via machine-driven evaluation algorithms (BLEU, ROUGE, METEOR, etc.), assessing precision and accuracy among LGBTQ+ communities.",
@@ -587,10 +606,9 @@ import {
       date: "Feb 2025 - Aug 2025",
       link: "",
       points: [
-        "Developed a production-ready financial intelligence chatbot using Retrieval-Augmented Generation and GPT-4o/O1, handling funding questions from 162 countries and improving relevance and accuracy scores by 20% via fine-tuning the retrieval pipeline on 500+ auto-generated prompts and human-labeled data.",
+        "Developed a production-ready financial intelligence chatbot using Retrieval-Augmented Generation and GPT-4o/O1, handling funding questions from 162countries and improving relevance and accuracy scores by 20% via fine-tuning the retrieval pipeline on 500+ auto-generated prompts and human-labeled data.",
         "Engineered 80+ hybrid features for funding and agency prediction across 150 thematic areas, reduced dimensionality to 40 via PCA, and performed model selection (SVM, GBM, LR, RF, KNN, etc.) with Random Search CV and Bayesian tuning, achieving an average of 89% classification accuracy.",
       ],
-      
       link: "https://un-dco.org/",
     },
     {
@@ -626,21 +644,21 @@ import {
   
   const educations = [
     {
-      degree: "Master of Science",
+      degree: "Master of Arts",
       branch:
-        "Quantitative Methods",
-      marks:
-      "GPA : 4.08 / 4.0",
+        "Quantitative Methods in the Social Sciences",
+      //marks:
+      // "GPA : 4.08 / 4.0"
       name: "Columbia University",
-      year: "2023 - 2024",
+      year: "2023 - 2025",
       image: nyu,
     },
     {
       degree:
-        "Bachelor of Art",
+        "Bachelor of Arts",
       branch : "Psychology & Mathematics",
-      marks:
-      "GPA : 3.72 / 4.0",
+      // marks:
+      // "GPA : 3.72 / 4.0",
       name: "DePauw University",
       year: "2018 - 2023",
       image: bits,
@@ -651,7 +669,7 @@ import {
     name: "Jackson Zhao",
     title: "Data Scientist | AI & Mental Health Researcher",
     description1:
-      "Hi there! 👋 I’m Jackson Zhao, a data scientist and AI researcher passionate about building innovative technologies that create meaningful social impact. I hold a Master’s in Quantitative Methods, Data Science from Columbia University 🎓 and have worked with the United Nations on global AI-driven projects 🌍.",
+      "I'm Jackson Zhao, a data scientist and AI researcher passionate about building innovative technologies that create meaningful social impact.",
     description2:
       "My passion is deeply rooted in mental health care 💙. I’ve developed machine-driven benchmarks to evaluate suicide prevention chatbots, fine-tuned language models for ethical alignment, and built pipelines that translate complex social data into actionable insights for decision-making.",
     description3:
@@ -661,4 +679,15 @@ import {
   };
   
   
-  export { list, profiles, technologies, experiences, educations, achievements, research, about };
+  export { 
+    list, 
+    profiles, 
+    technologies, 
+    experiences, 
+    educations, 
+    research, 
+    about,
+    mentalhealthAIProject,
+    llmProject,
+    dataScienceAnalyticsProject
+  };

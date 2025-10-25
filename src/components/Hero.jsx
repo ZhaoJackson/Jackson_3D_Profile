@@ -15,7 +15,7 @@ const Hero = () => {
   const textRef=useRef();
   useEffect(()=>
   {
-    init(textRef.current, { showCursor: true, strings: [' Machine Learning Aficionado ', "Data Alchemist ", " Engineer for Humanity ", " Mental Health Buffer ",'Innovation Enthusiast '] })
+    init(textRef.current, { showCursor: true, strings: [' Machine Learning Engineer ', "Data Alchemist ", " Engineer for Mental Health ", " Artificial Intelligence Buffer ",'Innovation Enthusiast ', ' Chinese Taichi Practitioner ', ' Calligraphy Enthusiast '] })
   },[]);
 
   return (
@@ -32,7 +32,22 @@ const Hero = () => {
 
         <div className="head2">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi 👋, I'm <p className='name text-[#915EFF]'>Jackson Zhao</p>
+            Hi{" "}
+            <motion.span
+              animate={{
+                rotate: [0, 20, -20, 20, -20, 0],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatDelay: 1,
+                ease: "easeInOut"
+              }}
+              style={{ display: "inline-block" }}
+            >
+              👋
+            </motion.span>
+            , I'm <p className='name text-[#915EFF]'>Jackson Zhao</p>
           </h1>
           <h3>
             <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>

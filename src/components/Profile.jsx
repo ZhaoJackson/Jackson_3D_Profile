@@ -16,11 +16,11 @@ const Profile = () => {
         </h2>
       </motion.div>
     <div className='my-skills'>
-      {profiles.map((profile) => (
-        <div className="skill" data-aos="fade-up" data-aos-delay="200">
+      {profiles.map((profile, index) => (
+        <div key={`profile-${index}`} className="skill" data-aos="fade-up" data-aos-delay="200">
         <div className="icon-container">
-          <a href={profile.link} target="_blank">
-            <img src={profile.icon} />
+          <a href={profile.link} target="_blank" rel="noopener noreferrer">
+            <img src={profile.icon} alt={`certification-${index}`} />
           </a>
         </div>
       </div>

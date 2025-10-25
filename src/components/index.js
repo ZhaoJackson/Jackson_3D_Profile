@@ -7,11 +7,11 @@ import Project from './Project';
 import Contact from './Contact';
 import Content from './Content';
 import Profile from './Profile';
-import Achievement from './Achievement';
 import Education from './Education';
 import Footer from './Footer';
 import About from './About';
 import Research from './Research';
+import ShootingStars from './ShootingStars';
 
 export {
   Hero,
@@ -28,7 +28,7 @@ export {
   StarsCanvas,
   Profile,
   Footer,
-  Achievement,
   About,
   Research,
+  ShootingStars,
 }

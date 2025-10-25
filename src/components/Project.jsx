@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -8,13 +8,9 @@ import { SectionWrapper } from "../hoc";
 
 import {
   list, // must be exported from your constants file
-  assistantsProject,
-  unProject,
-  visionProject,
-  webProject,
-  learningProject,
-  courseworkProject,
-  miscProject,
+  mentalhealthAIProject,
+  llmProject,
+  dataScienceAnalyticsProject,
 } from "../constants"; // adjust path if needed (e.g., "../constants/projects")
 
 import { fadeIn, textVariant } from "../utils/motion";
@@ -48,13 +44,14 @@ const ProjectCard = ({
   return (
     <motion.div
       whileInView={{ opacity: 1, transform: "none" }}
-      variants={fadeIn("up", "spring", index * 0.15, 0.65)}
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <Tilt
-        glareEnable={false}
-        tiltMaxAngleX={12}
-        tiltMaxAngleY={12}
-        transitionSpeed={450}
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
         <div className="Box1 relative w-full h-[180px]">
@@ -112,23 +109,25 @@ const ProjectCard = ({
 
 const Project = () => {
   // default to a valid category id from `list`
-  const [selected, setSelected] = useState("assistants");
+  const [selected, setSelected] = useState("mentalhealthAI");
 
   // Single source of truth: map category id -> project array
   const BUCKETS = useMemo(
     () => ({
-      assistants: assistantsProject,
-      un: unProject,
-      vision: visionProject,
-      webapps: webProject,
-      learning: learningProject,
-      coursework: courseworkProject,
-      misc: miscProject,
+      mentalhealthAI: mentalhealthAIProject,
+      llm: llmProject,
+      dataScienceAnalytics: dataScienceAnalyticsProject,
     }),
     []
   );
 
-  const data = BUCKETS[selected] ?? assistantsProject;
+  // Get the current data, with fallback
+  const data = BUCKETS[selected] || mentalhealthAIProject || [];
+
+  // Handle selection change
+  const handleSelect = (newSelected) => {
+    setSelected(newSelected);
+  };
 
   return (
     <>
@@ -150,17 +149,21 @@ const Project = () => {
                 key={item.id}
                 title={item.title}
                 active={selected === item.id}
-                setSelected={setSelected}
+                setSelected={handleSelect}
                 id={item.id}
               />
             ))}
           </ul>
 
           {/* Cards */}
-          <div className="box mt-20 flex flex-wrap justify-center gap-6">
-            {data.map((project, index) => (
-              <ProjectCard key={`${selected}-project-${index}`} index={index} {...project} />
-            ))}
+          <div className="box mt-20 flex flex-wrap justify-center">
+            {Array.isArray(data) && data.length > 0 ? (
+              data.map((project, index) => (
+                <ProjectCard key={`${selected}-project-${index}`} index={index} {...project} />
+              ))
+            ) : (
+              <p className="text-secondary">No projects found in this category.</p>
+            )}
           </div>
         </motion.div>
       </div>

@@ -9,12 +9,10 @@
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
-
-    li
-    {
-        justify-content: center;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
 
     @include mobile
     {
