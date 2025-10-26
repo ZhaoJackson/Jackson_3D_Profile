@@ -85,8 +85,8 @@ const Computers = ({ isMobile }) => {
       
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.1 : 0.00155}
-        position={isMobile ? [0, -3.5, 0] : [0, -3.5, 0]}
+        scale={isMobile ? 0.1 : 0.0018}
+        position={isMobile ? [0, -3.8, 0] : [0, -3.9, 0]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -127,13 +127,16 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={true}
-          enablePan={true}
+          enableZoom={false}
+          enablePan={false}
           enableRotate={true}
           autoRotate={true}
           autoRotateSpeed={1}
           enableDamping={true}
           dampingFactor={0.05}
+          minDistance={5}
+          maxDistance={5}
+          target={[0, 0, 0]}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
