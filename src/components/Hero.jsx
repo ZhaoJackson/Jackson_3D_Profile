@@ -8,7 +8,6 @@ import {ImLinkedin} from "react-icons/im";
 import {AiOutlineInstagram} from "react-icons/ai";
 import {BiLinkAlt} from "react-icons/bi";
 import {kani} from "../assets";
-import HeroNetworkCanvas from "./HeroNetworkCanvas";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -21,7 +20,6 @@ const Hero = () => {
 
   return (
     <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
-      <HeroNetworkCanvas />
       <div className="flex" style={{ position: "relative", zIndex: 1 }}>
       <div
         className={`head1 absolute top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 inset-10`}
