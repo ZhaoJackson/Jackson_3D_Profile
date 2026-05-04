@@ -1,9 +1,10 @@
-import { Contact, Profile, About, Achievement, Experience, Education, Hero, Navbar, Tech, Project, Research, StarsCanvas, Content, Footer, ShootingStars } from "./components";
+import { Contact, Profile, About, Achievement, Experience, Education, Hero, Navbar, Tech, Project, Research, StarsCanvas, Content, Footer } from "./components";
+import NetworkCanvas from "./components/NetworkCanvas";
 
 const App = () => {
   return (
-    <div className='relative z-0 bg-primary'>
-      <ShootingStars />
+    <div className='relative z-0'>
+      <NetworkCanvas />
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar />
         <Hero />

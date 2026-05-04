@@ -17,10 +17,11 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#071528",
         color: "#fff",
+        border: "1px solid rgba(255,255,255,0.08)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid #0d2040" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -72,7 +73,12 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div id="experience" variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
