@@ -8,6 +8,7 @@ import {ImLinkedin} from "react-icons/im";
 import {AiOutlineInstagram} from "react-icons/ai";
 import {BiLinkAlt} from "react-icons/bi";
 import {kani} from "../assets";
+import HeroNetworkCanvas from "./HeroNetworkCanvas";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -19,13 +20,14 @@ const Hero = () => {
   },[]);
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div className="flex">
+    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
+      <HeroNetworkCanvas />
+      <div className="flex" style={{ position: "relative", zIndex: 1 }}>
       <div
         className={`head1 absolute top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 inset-10`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#3b82f6]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
@@ -47,7 +49,7 @@ const Hero = () => {
             >
               👋
             </motion.span>
-            , I'm <p className='name text-[#915EFF]'>Jackson Zhao</p>
+            , I'm <p className='name text-[#60a5fa]'>Jackson Zhao</p>
           </h1>
           <h3>
             <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>
@@ -75,7 +77,7 @@ const Hero = () => {
 
       </div>
       </div>
-      <div className="imgcontainer1 absolute violet-gradient">
+      <div className="imgcontainer1 absolute violet-gradient" style={{ zIndex: 1 }}>
         <img src={kani} alt="" className="object-contain"/>
       </div>
       </div>
@@ -83,7 +85,7 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-15 bottom-32 w-20 flex justify-end items-center'>
+      <div className='absolute xs:bottom-15 bottom-32 w-20 flex justify-end items-center' style={{ zIndex: 1 }}>
         <a href='#education'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

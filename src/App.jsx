@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className='relative z-0'>
       <NetworkCanvas />
-      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div>
         <Navbar />
         <Hero />
       </div>
