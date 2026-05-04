@@ -10,6 +10,7 @@ import Profile from './Profile';
 import Education from './Education';
 import Footer from './Footer';
 import About from './About';
+import Achievement from './Achievement';
 import Research from './Research';
 import ShootingStars from './ShootingStars';
 
@@ -29,6 +30,7 @@ export {
   Profile,
   Footer,
   About,
+  Achievement,
   Research,
   ShootingStars,
 }

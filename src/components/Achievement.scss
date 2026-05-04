@@ -1,0 +1,118 @@
+.carousel-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.carousel-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(17, 22, 45, 0.72);
+    color: rgba(230, 240, 255, 0.92);
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-1px);
+    border-color: rgba(94, 234, 212, 0.45);
+    background: rgba(33, 45, 88, 0.78);
+}
+
+.achievement-grid {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.achievement-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.achievement-card {
+    flex: 0 0 calc((100% - 3.75rem) / 4);
+    height: 184px;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    background: radial-gradient(circle at top left, rgba(93, 56, 189, 0.28), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(31, 154, 220, 0.2), transparent 60%),
+                rgba(17, 16, 32, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 35px rgba(8, 10, 26, 0.45);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.achievement-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(
+        from 140deg,
+        transparent 0deg 250deg,
+        rgba(106, 90, 205, 0.8) 260deg 280deg,
+        rgba(111, 220, 255, 0.7) 285deg 305deg,
+        transparent 310deg 360deg
+    );
+    filter: blur(6px);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.achievement-text {
+    flex: 1 1 auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(235, 241, 255, 0.9);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.achievement-link {
+    display: inline-flex;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .achievement-card {
+        flex: 0 0 calc((100% - 1.25rem) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .achievement-card {
+        flex: 0 0 100%;
+        padding: 1rem;
+        height: 170px;
+    }
+
+    .achievement-text {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 6;
+    }
+}
