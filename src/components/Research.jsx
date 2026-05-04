@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
-import { research } from "../constants";
+import { research } from "../data";
 import "./Research.scss";
 
 const Research = () => {

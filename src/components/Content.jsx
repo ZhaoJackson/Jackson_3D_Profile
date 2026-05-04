@@ -31,9 +31,9 @@ const Content = () => {
           <AiOutlineFundProjectionScreen />
         </a>
         <a
-          href="#experience"
-          onClick={() => setActiveNav("#experience")}
-          className={activeNav === "#experience" ? "active" : ""}
+          href="#work"
+          onClick={() => setActiveNav("#work")}
+          className={activeNav === "#work" ? "active" : ""}
         >
           <BsPersonWorkspace />
         </a>

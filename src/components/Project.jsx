@@ -6,12 +6,7 @@ import { styles } from "../styles";
 import { demo, github } from "../assets"; // ensure both exist in ../assets/index.(js|ts)
 import { SectionWrapper } from "../hoc";
 
-import {
-  list, // must be exported from your constants file
-  mentalhealthAIProject,
-  llmProject,
-  dataScienceAnalyticsProject,
-} from "../constants"; // adjust path if needed (e.g., "../constants/projects")
+import { list, mentalhealthAIProject, llmProject, dataScienceAnalyticsProject } from "../data";
 
 import { fadeIn, textVariant } from "../utils/motion";
 import ProjectList from "./ProjectList";

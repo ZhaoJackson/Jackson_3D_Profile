@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
-import { logo} from "../assets";
+import { logo } from "../assets";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -33,8 +31,8 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
+        <a
+          href='#'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
@@ -42,10 +40,10 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
-          <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex '>
-          Jackson Zhao
+          <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex'>
+            Jackson Zhao
           </p>
-        </Link>
+        </a>
 
         <div className='sm:flex gap-5'>
           <div

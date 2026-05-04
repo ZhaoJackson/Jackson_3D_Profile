@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { educations } from "../constants";
+import { educations } from "../data";
 import "./Education.scss";
 
 const FeedbackCard = ({

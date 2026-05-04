@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { technologies } from "../data";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";

@@ -21,7 +21,7 @@ import threejs from "./tech/threejs.svg";
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
 import xneuronz from "./logo.png";
-import nyu from "./project/nyu.jpg";
+import nyu from "./project/nyu.jpg"; // legacy filename; used as Columbia University image in education data
 import bits from "./project/bits.jpg";
 
 // Import new technology icons
