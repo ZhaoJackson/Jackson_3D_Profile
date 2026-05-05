@@ -4,58 +4,38 @@ import { logo } from "../assets";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-3 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
-    >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <a
-          href='#'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
-          <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex'>
-            Jackson Zhao
-          </p>
-        </a>
+    <nav className={`navbar-bar ${styles.paddingX} ${scrolled ? "navbar-bar--scrolled" : ""}`}>
 
-        <div className='sm:flex gap-5'>
-          <div
-              className={`top2 ${"text-secondary"
-              } hover:text-white text-[15px] font-medium cursor-pointer`}
-            >
-              <a href="https://drive.google.com/file/d/1abB2fmg_TnhIkt8dnXhOPcdRZZ10H3wA/view?usp=sharing" target="_blank"> <b> Resume </b></a>
-          </div>
-        </div>
-      </div>
+      {/* ── Logo + name (far left) ── */}
+      <a
+        href="#"
+        className="navbar-brand"
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        <img src={logo} alt="Jackson Zhao logo" className="logo navbar-logo" />
+        <span className="navbar-name">Jackson Zhao</span>
+      </a>
+
+      {/* ── Resume button (far right) ── */}
+      <a
+        href="https://drive.google.com/file/d/1abB2fmg_TnhIkt8dnXhOPcdRZZ10H3wA/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+        className="resume-link"
+      >
+        Resume
+      </a>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

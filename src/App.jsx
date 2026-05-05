@@ -1,5 +1,6 @@
 import { Contact, Profile, About, Achievement, Experience, Education, Hero, Navbar, Tech, Project, Research, StarsCanvas, Content, Footer } from "./components";
 import NetworkCanvas from "./components/NetworkCanvas";
+import MusicPlayer from "./components/MusicPlayer";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <StarsCanvas />
       </div>
       <Footer />
+      <MusicPlayer />
     </div>
   );
 };

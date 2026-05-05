@@ -1,0 +1,63 @@
+.music-btn {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width:  3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(4, 9, 26, 0.75);
+  backdrop-filter: blur(14px);
+  color: rgba(200, 228, 255, 0.9);
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(4, 9, 26, 0.5);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+              background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.08);
+    border-color: rgba(100, 175, 255, 0.4);
+    background: rgba(7, 21, 55, 0.88);
+    box-shadow: 0 14px 34px rgba(4, 9, 26, 0.55);
+  }
+
+  &--playing {
+    border-color: rgba(100, 175, 255, 0.55);
+    background: rgba(10, 28, 70, 0.82);
+    box-shadow: 0 0 20px rgba(100, 175, 255, 0.3),
+                0 10px 28px rgba(4, 9, 26, 0.5);
+  }
+}
+
+/* ── Equalizer bars ──────────────────────────────── */
+.music-eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 18px;
+
+  span {
+    display: block;
+    width: 3px;
+    border-radius: 2px;
+    background: rgba(100, 175, 255, 0.95);
+    transform-origin: bottom;
+    animation: eq-bounce 0.65s ease-in-out infinite alternate;
+
+    &:nth-child(1) { height: 8px;  animation-delay: 0s;    }
+    &:nth-child(2) { height: 15px; animation-delay: 0.15s; }
+    &:nth-child(3) { height: 10px; animation-delay: 0.3s;  }
+    &:nth-child(4) { height: 6px;  animation-delay: 0.45s; }
+  }
+}
+
+@keyframes eq-bounce {
+  from { transform: scaleY(0.3); opacity: 0.55; }
+  to   { transform: scaleY(1);   opacity: 1;    }
+}

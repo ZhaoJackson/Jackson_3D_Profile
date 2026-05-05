@@ -1,109 +1,128 @@
 @use "../global" as *;
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
-.ityped-cursor
-{
-    animation: blink 2s infinite;
+/* ── Typing cursor ─────────────────────────────────── */
+.ityped-cursor {
+  animation: blink 2s infinite;
 }
-@keyframes blink
-{
-    50%
-    {
-        opacity: 1;
-    }
-    100%
-    {
-        opacity: 0;
-    }
-
+@keyframes blink {
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
 }
 
-.head1
-{
+/* ── Hero section ──────────────────────────────────── */
+.hero-section {
+  min-height: 100vh;
+}
+
+/* ── Text block ────────────────────────────────────── */
+.head1 {
+  top: 90px;
+  left: 0;
+  right: 0;
+  max-width: 56rem;   // leave room for photo on desktop
+
+  @include mobile3 {  // ≤830px
+    max-width: 68%;
+  }
+
+  @include mobile {   // ≤480px
+    max-width: 76%;
     top: 80px;
-    .head2
-    {
-        line-height: 95px;
-        @include mobile4
-        {
-            line-height: 70px;
-        }
+  }
 
-        .link1
-        {
-            line-height: 40px;
-            margin-top: 1.6rem;
-            padding: 0.4rem 0.55rem;
-            background: rgba(8, 12, 28, 0.48);
-            width: max-content;
-            display: flex;
-            z-index: 2;
-            gap: 0.55rem;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 14px 32px rgba(5, 8, 22, 0.28);
-            backdrop-filter: blur(12px);
-
-            a{
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: rgba(226, 232, 240, 0.86);
-                font-size: 1.6rem;
-                transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-            }
-
-            a:hover {
-                transform: translateY(-1px);
-                background: rgba(255, 255, 255, 0.08);
-                color: #ffffff;
-            }
-        }
+  .head2 {
+    .name {
+      font-family: 'Kalam', cursive;
+      font-weight: 900;
     }
-    .name
-    {
-        font-family: 'Kalam', cursive;
-        font-weight: 900;
-    }
+  }
 }
 
+/* ── Social icon row ──────────────────────────────── */
+.link1 {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+  padding: 0.4rem 0.55rem;
+  background: rgba(8, 12, 28, 0.48);
+  width: max-content;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 32px rgba(5, 8, 22, 0.28);
+  backdrop-filter: blur(12px);
 
-.imgcontainer1
-{
-    right: 4rem;
-    top: 6rem;
-    width: 300px;
-    height: 300px;
-    padding: 0.7rem;
-    border-radius: 40%;
+  a {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 24px 50px rgba(6, 10, 24, 0.34);
-    backdrop-filter: blur(12px);
+    color: rgba(226, 232, 240, 0.86);
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 
-    @include mobile3
-    {
-        width: 200px;
-        height: 200px;
-        right: 5px;
+    &:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
     }
+  }
 
-    @include mobile2
-    {
-        display: none;
+  @include mobile {
+    gap: 0.35rem;
+    a {
+      width: 2.2rem;
+      height: 2.2rem;
+      font-size: 1.2rem;
     }
+  }
+}
 
-    img
-    {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 35%;
-        box-shadow: 0 10px 24px rgba(6, 10, 24, 0.26);
-    }
+/* ── Profile picture ───────────────────────────────── */
+.imgcontainer1 {
+  right: 3rem;
+  top: 5.5rem;
+  width: 280px;
+  height: 280px;
+  padding: 0.6rem;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 50px rgba(6, 10, 24, 0.34);
+  backdrop-filter: blur(12px);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35%;
+    box-shadow: 0 10px 24px rgba(6, 10, 24, 0.26);
+  }
+
+  @include mobile3 {   // ≤830px
+    width: 180px;
+    height: 180px;
+    right: 1.2rem;
+    top: 5rem;
+  }
+
+  @include mobile1 {   // ≤640px
+    width: 130px;
+    height: 130px;
+    right: 0.75rem;
+    top: 4.5rem;
+    padding: 0.35rem;
+  }
+
+  @include mobile {    // ≤480px
+    width: 100px;
+    height: 100px;
+    right: 0.5rem;
+    top: 4rem;
+    padding: 0.25rem;
+  }
 }

@@ -1,31 +1,94 @@
-.top2 {
-    text-decoration: none;
+/* ── Navbar bar ─────────────────────────────────────── */
+.navbar-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 
-    .resume-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.55rem 1rem;
-        border-radius: 999px;
-        text-decoration: none;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        background: rgba(11, 16, 36, 0.56);
-        box-shadow: 0 10px 24px rgba(6, 10, 24, 0.24);
-        backdrop-filter: blur(12px);
-        transition: transform 0.2s ease, border-color 0.2s ease,
-            box-shadow 0.2s ease, background 0.2s ease;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    .resume-link:hover {
-        transform: translateY(-1px);
-        border-color: rgba(125, 211, 252, 0.28);
-        background: rgba(15, 23, 42, 0.72);
-        box-shadow: 0 14px 28px rgba(6, 10, 24, 0.3);
-    }
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  background: transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease,
+              box-shadow 0.3s ease;
+
+  &--scrolled {
+    background: rgba(4, 9, 26, 0.82);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 4px 24px rgba(4, 9, 26, 0.4);
+  }
 }
 
-.logo {
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16),
-        0 8px 18px rgba(6, 10, 24, 0.28);
+/* ── Logo + name ─────────────────────────────────────── */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16),
+              0 6px 16px rgba(6, 10, 24, 0.3);
+  flex-shrink: 0;
+
+  @media (max-width: 480px) {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+
+.navbar-name {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+
+  @media (max-width: 480px) {
+    font-size: 0.88rem;
+  }
+}
+
+/* ── Resume pill button ───────────────────────────────── */
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(200, 228, 255, 0.92);
+  border: 1px solid rgba(100, 175, 255, 0.22);
+  background: rgba(7, 21, 48, 0.55);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 22px rgba(6, 10, 24, 0.22);
+  transition: transform 0.2s ease, border-color 0.2s ease,
+              box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(100, 175, 255, 0.4);
+    background: rgba(10, 30, 70, 0.72);
+    box-shadow: 0 12px 28px rgba(6, 10, 24, 0.3);
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.38rem 0.8rem;
+    font-size: 0.78rem;
+  }
 }

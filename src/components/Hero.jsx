@@ -1,101 +1,112 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import {init} from 'ityped';
-import React , { useEffect , useRef} from "react";
-import {AiOutlineGithub } from "react-icons/ai";
-import {ImLinkedin} from "react-icons/im";
-import {AiOutlineInstagram} from "react-icons/ai";
-import {BiLinkAlt} from "react-icons/bi";
-import {kani} from "../assets";
+import { init } from 'ityped';
+import React, { useEffect, useRef, useState } from "react";
+import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
+import { ImLinkedin } from "react-icons/im";
+import { BiLinkAlt } from "react-icons/bi";
+import { kani } from "../assets";
 import "./Hero.scss";
 
 const Hero = () => {
+  const textRef  = useRef();
+  const [isMobile, setIsMobile] = useState(false);
 
-  const textRef=useRef();
-  useEffect(()=>
-  {
-    init(textRef.current, { showCursor: true, strings: [' Machine Learning Engineer ', "Data Alchemist ", " Engineer for Mental Health ", " Artificial Intelligence Buffer ",'Innovation Enthusiast ', ' Chinese Taichi Practitioner ', ' Calligraphy Enthusiast '] })
-  },[]);
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      strings: [
+        ' Machine Learning Engineer ',
+        ' Data Alchemist ',
+        ' Engineer for Mental Health ',
+        ' AI Researcher ',
+        ' Innovation Enthusiast ',
+        ' Taichi Practitioner ',
+      ],
+    });
+  }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   return (
-    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
-      <div className="flex" style={{ position: "relative", zIndex: 1 }}>
-      <div
-        className={`head1 absolute top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 inset-10`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#3b82f6]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+    <section className="hero-section relative w-full h-screen mx-auto overflow-hidden">
 
+      {/* ── Profile picture (always visible) ── */}
+      <div className="imgcontainer1 absolute violet-gradient" style={{ zIndex: 2 }}>
+        <img src={kani} alt="Jackson Zhao" className="object-cover" />
+      </div>
+
+      {/* ── Text + social links ── */}
+      <div
+        className={`head1 absolute ${styles.paddingX} flex flex-row items-start gap-5`}
+        style={{ zIndex: 2 }}
+      >
+        {/* Accent line */}
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#3b82f6]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        </div>
 
         <div className="head2">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi{" "}
             <motion.span
-              animate={{
-                rotate: [0, 20, -20, 20, -20, 0],
-              }}
-              transition={{
-                duration: 1,
-                repeat: Infinity,
-                repeatDelay: 1,
-                ease: "easeInOut"
-              }}
+              animate={{ rotate: [0, 20, -20, 20, -20, 0] }}
+              transition={{ duration: 1, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }}
               style={{ display: "inline-block" }}
             >
               👋
             </motion.span>
-            , I'm <p className='name text-[#60a5fa]'>Jackson Zhao</p>
+            , I'm{" "}
+            <span className="name text-[#60a5fa] block">Jackson Zhao</span>
           </h1>
-          <h3>
-            <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>
+
+          <h3 className="mt-2">
+            <span
+              ref={textRef}
+              className={`${styles.heroSubText} blue-text-gradient`}
+            />
           </h3>
-        
-        <div className="absolute link1">        
-        <a
-          href="https://github.com/ZhaoJackson" target="_blank">
-          <AiOutlineGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/zichenzhao6/" target="_blank">
-          <ImLinkedin />
-        </a>
-        {<a
-          href="https://www.instagram.com/jackson_zhao_/" target="_blank">
-          <AiOutlineInstagram />
-        </a>}
-        <a
-          href="https://drive.google.com/drive/u/0/folders/1vs1EJTHtLCkd3ejOnqRbiPcECBInmN81" target="_blank">
-          <BiLinkAlt />
-        </a>
 
+          {/* Social links */}
+          <div className="link1 mt-4">
+            <a href="https://github.com/ZhaoJackson" target="_blank" rel="noreferrer">
+              <AiOutlineGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/zichenzhao6/" target="_blank" rel="noreferrer">
+              <ImLinkedin />
+            </a>
+            <a href="https://www.instagram.com/jackson_zhao_/" target="_blank" rel="noreferrer">
+              <AiOutlineInstagram />
+            </a>
+            <a href="https://drive.google.com/drive/u/0/folders/1vs1EJTHtLCkd3ejOnqRbiPcECBInmN81" target="_blank" rel="noreferrer">
+              <BiLinkAlt />
+            </a>
+          </div>
+        </div>
       </div>
 
-      </div>
-      </div>
-      <div className="imgcontainer1 absolute violet-gradient" style={{ zIndex: 1 }}>
-        <img src={kani} alt="" className="object-contain"/>
-      </div>
-      </div>
+      {/* ── 3-D model: desktop only ── */}
+      {!isMobile && <ComputersCanvas />}
 
-
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-15 bottom-32 w-20 flex justify-end items-center' style={{ zIndex: 1 }}>
-        <a href='#education'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      {/* ── Scroll hint ── */}
+      <div
+        className="absolute bottom-10 w-full flex justify-center items-center"
+        style={{ zIndex: 2 }}
+      >
+        <a href="#education">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              animate={{ y: [0, 24, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>
