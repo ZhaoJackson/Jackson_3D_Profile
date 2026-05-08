@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -7,19 +7,60 @@ import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 import { research } from "../data";
 import "./Research.scss";
 
+const SCROLL_AMOUNT = 420;
+
 const Research = () => {
+  const gridRef = useRef(null);
+  const [canLeft, setCanLeft] = useState(false);
+  const [canRight, setCanRight] = useState(true);
+
+  const updateNav = () => {
+    const el = gridRef.current;
+    if (!el) return;
+    setCanLeft(el.scrollLeft > 8);
+    setCanRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 8);
+  };
+
+  useEffect(() => {
+    const el = gridRef.current;
+    if (!el) return;
+    updateNav();
+    el.addEventListener("scroll", updateNav, { passive: true });
+    return () => el.removeEventListener("scroll", updateNav);
+  }, []);
+
+  const scrollBy = (dir) => {
+    gridRef.current?.scrollBy({ left: dir * SCROLL_AMOUNT, behavior: "smooth" });
+  };
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       
       {/* Research Section */}
-      <div className={`bg-tertiary rounded-2xl mt-10 ${styles.padding}`}>
+      <div className={`bg-tertiary rounded-2xl mt-10 ${styles.padding}`} style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>In the Field of...</p>
           <h2 className={styles.sectionHeadText}>Research.</h2>
         </motion.div>
+
+        {/* Nav arrows — top-right of header */}
+        <div className="research-nav-btns">
+          <button
+            className={`research-nav-btn${canLeft ? "" : " research-nav-btn--dim"}`}
+            onClick={() => scrollBy(-1)}
+            aria-label="Scroll left"
+          >‹</button>
+          <button
+            className={`research-nav-btn${canRight ? "" : " research-nav-btn--dim"}`}
+            onClick={() => scrollBy(1)}
+            aria-label="Scroll right"
+          >›</button>
+        </div>
       </div>
+
       <div className={`-mt-20 justify-center p-6 ${styles.paddingX}`}>
         <motion.ul
+          ref={gridRef}
           className='research-grid'
           variants={staggerContainer(0.12, 0.2)}
           initial='hidden'

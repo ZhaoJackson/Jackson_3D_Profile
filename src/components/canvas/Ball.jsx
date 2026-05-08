@@ -10,6 +10,17 @@ import {
 
 import CanvasLoader from "../Loader";
 
+class BallErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = { error: false }; }
+  static getDerivedStateFromError() { return { error: true }; }
+  render() {
+    if (this.state.error) return (
+      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.4, fontSize: "0.6rem", color: "#aaa" }} />
+    );
+    return this.props.children;
+  }
+}
+
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
@@ -39,26 +50,28 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop='always'
-      dpr={[1, 1.5]}
-      gl={{ 
-        preserveDrawingBuffer: true,
-        antialias: false,
-        powerPreference: "high-performance"
-      }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Ball imgUrl={icon} />
-      </Suspense>
+    <BallErrorBoundary>
+      <Canvas
+        frameloop='always'
+        dpr={[1, 1.5]}
+        gl={{ 
+          preserveDrawingBuffer: true,
+          antialias: false,
+          powerPreference: "high-performance"
+        }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Ball imgUrl={icon} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </BallErrorBoundary>
   );
 };
 

@@ -1,21 +1,18 @@
 import { nyu, bits } from "../assets";
-
-// Note: `nyu` image here represents Columbia University's image asset (filename is legacy).
 const educations = [
   {
-    degree: "Master of Arts",
-    branch: "Quantitative Methods in the Social Sciences",
+    degree: "Master's",
+    branch: "Research Methodology & Quantitative Methods",
     name: "Columbia University",
-    year: "2023 - 2025",
+    year: "2023 - 2024",
     image: nyu,
   },
   {
-    degree: "Bachelor of Arts",
-    branch: "Psychology & Mathematics",
+    degree: "Bachelor's",
+    branch: "Psychology | Mathematics",
     name: "DePauw University",
     year: "2018 - 2023",
     image: bits,
   },
 ];
-
 export { educations };

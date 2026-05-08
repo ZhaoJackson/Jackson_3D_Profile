@@ -5,8 +5,6 @@ $width4: 830px;
 $width5: 1024px;
 // $width5: 1300px;
 
-
-
 @mixin mobile 
 {   
    @media (max-width: #{$width1}) 

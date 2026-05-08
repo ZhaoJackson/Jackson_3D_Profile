@@ -6,11 +6,9 @@ import Experience from './Experience';
 import Project from './Project';
 import Contact from './Contact';
 import Content from './Content';
-import Profile from './Profile';
 import Education from './Education';
 import Footer from './Footer';
 import About from './About';
-import Achievement from './Achievement';
 import Research from './Research';
 import ShootingStars from './ShootingStars';
 
@@ -27,10 +25,8 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Profile,
   Footer,
   About,
-  Achievement,
   Research,
   ShootingStars,
 }

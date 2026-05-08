@@ -1,14 +1,13 @@
 const about = {
   name: "Jackson Zhao",
-  title: "Data Scientist | AI & Mental Health Researcher",
+  title: "Data Scientist | AI, Brain Science & BCI Researcher",
   description1:
-    "I'm Jackson Zhao, a data scientist and AI researcher passionate about building innovative technologies that create meaningful social impact.",
+    "I'm Jackson Zhao, a data scientist and AI researcher interested in how data, brain science, and emerging AI systems can help us better understand human cognition, emotion, and behavior.",
   description2:
-    "My passion is deeply rooted in mental health care 💙. I've developed machine-driven benchmarks to evaluate suicide prevention chatbots, fine-tuned language models for ethical alignment, and built pipelines that translate complex social data into actionable insights for decision-making.",
+    "My current work sits at the intersection of neuroscience, mental health, and artificial intelligence. I have worked on EEG-based research, machine-learning pipelines, synthetic EEG evaluation, and AI systems designed to support high-stakes mental health contexts.",
   description3:
-    "I speak fluent Python 🐍 (plus R, SQL, and cloud platforms like GCP, AWS, and Azure), and enjoy experimenting with frameworks such as TensorFlow, PyTorch, and Hugging Face 🤖. I'm especially drawn to large language models, generative AI, and responsible AI design.",
+    "I am especially interested in passive Brain Computer Interfaces (BCI) and affective BCI: using brain signals, behavioral data, and AI models to better understand mental states such as attention, stress, craving, emotion, and cognitive load. My goal is to translate complex neural and behavioral signals into insights that are interpretable and useful for real-world care.",
   description4:
-    "My goal is to be a solid bridge between mental health and AI, ensuring that technology not only scales but also heals. If you're excited about reimagining mental health with AI—whether through inclusive chatbots, predictive analytics, or responsible data science—let's connect and build something impactful together! 🚀",
+    "Technically, I work across Python, R, SQL, cloud platforms, and machine-learning frameworks such as TensorFlow, PyTorch, and Hugging Face. But my broader goal is not just to build models but to build bridges between AI, brain science, and mental health so that future technologies can sense, adapt, and support people in more human-centered ways.",
 };
-
 export { about };

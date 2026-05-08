@@ -22,7 +22,6 @@ const ExperienceCard = ({ experience }) => {
         border: "1px solid rgba(255,255,255,0.08)",
       }}
       contentArrowStyle={{ borderRight: "7px solid #0d2040" }}
-      date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -34,27 +33,26 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div>
-        <h3 className='experience-title text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
+      <div className='experience-header'>
+        <div className='experience-copy'>
+          <h3 className='experience-title text-white text-[24px] font-bold'>{experience.title}</h3>
+          <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
+            {experience.company_name}
+          </p>
+        </div>
+        {experience.date && (
+          <span className='experience-date-chip'>{experience.date}</span>
+        )}
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='experience-point text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
+      <div className='mt-4'>
+        {experience.summary && (
+          <p className='text-white-100 text-[14px] leading-relaxed tracking-wide'>
+            {experience.summary}
+          </p>
+        )}
         {experience.link && (
-          <li className='flex justify-center'>
+          <div className='flex justify-center mt-4'>
             <a
               href={experience.link}
               className='experience-link blue-text-gradient'
@@ -63,9 +61,9 @@ const ExperienceCard = ({ experience }) => {
             >
               LINK
             </a>
-          </li>
+          </div>
         )}
-      </ul>
+      </div>
     </VerticalTimelineElement>
   );
 };

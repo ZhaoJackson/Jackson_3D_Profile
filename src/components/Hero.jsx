@@ -23,6 +23,8 @@ const Hero = () => {
         ' AI Researcher ',
         ' Innovation Enthusiast ',
         ' Taichi Practitioner ',
+        ' Neuroscientist ',
+        ' Biomedical Engineer',
       ],
     });
   }, []);
@@ -80,7 +82,7 @@ const Hero = () => {
             <a href="https://github.com/ZhaoJackson" target="_blank" rel="noreferrer">
               <AiOutlineGithub />
             </a>
-            <a href="https://www.linkedin.com/in/zichenzhao6/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/jaxonzhao/" target="_blank" rel="noreferrer">
               <ImLinkedin />
             </a>
             <a href="https://www.instagram.com/jackson_zhao_/" target="_blank" rel="noreferrer">
@@ -96,21 +98,6 @@ const Hero = () => {
       {/* ── 3-D model: desktop only ── */}
       {!isMobile && <ComputersCanvas />}
 
-      {/* ── Scroll hint ── */}
-      <div
-        className="absolute bottom-10 w-full flex justify-center items-center"
-        style={{ zIndex: 2 }}
-      >
-        <a href="#education">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div>
     </section>
   );
 };

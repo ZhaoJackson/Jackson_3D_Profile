@@ -4,72 +4,47 @@ const list = [
   { id: "llm", title: "Large Language Models" },
   { id: "dataScienceAnalytics", title: "Data Science & Analytics" },
 ];
-
 // ====== Mental Health & AI Projects ======
 const mentalhealthAIProject = [
   {
-    name: "Machine-Driven Evaluation Framework for Suicide Prevention",
+    name: "PsyChat",
     description:
-      "AI chatbot evaluation benchmark for mental health and suicide prevention with rule-based ethical alignment, inclusivity scoring, and sentiment analysis.",
+      "A mental health AI application designed to evaluate and support multi-turn conversations in sensitive psychological contexts. The project focuses on how AI systems respond to personal distress, emotional needs, and therapeutic-style interactions.",
     tags: [
-      { name: "AI Ethics", color: "blue-text-gradient" },
-      { name: "Single-Turn Evaluation", color: "green-text-gradient" },
-      { name: "Algorithmic Benchmarking", color: "pink-text-gradient" },
+      { name: "Mental Health AI", color: "blue-text-gradient" },
+      { name: "Clinical Evaluation", color: "green-text-gradient" },
+      { name: "Azure OpenAI", color: "pink-text-gradient" },
+      { name: "Multi-Turn Chat", color: "purple-text-gradient" },
     ],
     image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Multiple-Inheritance-and-Mixins_Watermarked.1cfef28a6113.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Text-Reference-AIChatbot",
-  },
-  {
-    name: "Web-Based Evaluation Product against AI Responses",
-    description:
-      "AI evaluation tool with suicidal prevention with automatic database for reinforcement learning with ethical alignment, inclusivity, complexity, and sentiment.",
-    tags: [
-      { name: "Drupal Framework", color: "blue-text-gradient" },
-      { name: "Suicide Prevention", color: "green-text-gradient" },
-      { name: "Reinforcement Learning", color: "pink-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/A-Complete-Walkthrough-of-Pythons-Asyncio_Watermarked.5b6b9a01fdc9.jpg",
-    source_link: "http://crmforrealty.com/",
-    source_code_link: "https://github.com/ZhaoJackson/AI_Response_Evaluation_Benchmark",
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Requests-Library-Tutorial_Watermarked.3c9dfdc7b014.jpg",
+    source_link: "https://psychatbot.streamlit.app/",
+    source_code_link: "https://github.com/ZhaoJackson/PsyChat",
   },
   {
     name: "J . A . R . V . I . S",
     description:
-      "AI-powered mental health assistant integrating Telegram, Spotify, and Ollama for therapeutic support through emotion analysis, philosophical wisdom, and music therapy.",
+      "A personal AI assistant exploring emotion-aware support through mood analysis, music recommendation, philosophical reflection, and conversational interaction. The project connects AI agents with daily mental wellness and affective computing ideas.",
     tags: [
+      { name: "Emotion AI", color: "blue-text-gradient" },
       { name: "Ollama", color: "green-text-gradient" },
       { name: "Spotify", color: "pink-text-gradient" },
       { name: "Telegram", color: "orange-text-gradient" },
-      { name: "Music Therapy", color: "red-text-gradient" },
-      { name: "Philosophical Wisdom", color: "green-text-gradient" },
+      { name: "Affective Computing", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Modern-Web-Automation-With-Python-and-Selenium_Watermarked.08e8e08b976d.jpg",
     source_code_link: "https://github.com/ZhaoJackson/J.A.R.V.I.S",
   },
   {
-    name: "Human VS AI Game",
-    description:
-      "Interactive Turing Test Game: Can you tell which response is from a human and which is from AI? A gamified mental health awareness tool that challenges users to distinguish between human and AI-generated responses to mental health prompts.",
-    tags: [
-      { name: "Turing Test", color: "blue-text-gradient" },
-      { name: "Vercel", color: "pink-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/MySQL-and-Python_Watermarked.4353d1d57493.jpg",
-    source_link: "https://turing-app.vercel.app/",
-    source_code_link: "https://github.com/ZhaoJackson/Human_VS_AI_Game",
-  },
-  {
     name: "MBTI Personality Analysis",
     description:
-      "MBTI mental health analysis with ML and Bayesian tuning for personalized treatment recommendations.",
+      "A machine-learning project analyzing personality-related patterns and mental health indicators. The project uses predictive modeling and tuning methods to explore how psychological profiles may support personalized mental health insights.",
     tags: [
-      { name: "Random Forest", color: "blue-text-gradient" },
-      { name: "Bayesian Tuning", color: "green-text-gradient" },
-      { name: "mbti", color: "pink-text-gradient" },
+      { name: "Personality Analysis", color: "blue-text-gradient" },
+      { name: "Random Forest", color: "green-text-gradient" },
+      { name: "Bayesian Tuning", color: "pink-text-gradient" },
+      { name: "Mental Health", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/code_quality_img.73eae557a204.jpg",
@@ -82,37 +57,30 @@ const llmProject = [
   {
     name: "United Nations Funding Intelligence Chatbot",
     description:
-      "A comprehensive AI-powered analytics platform for UN JointWork Plans financial data analysis, featuring predictive modeling, anomaly detection, and intelligent chatbot assistance.",
+      "An LLM-powered analytics platform for exploring UN Joint Work Plans and funding data. The system combines structured data analysis, prompt-based reasoning, and chatbot assistance to help users understand financial alignment and development priorities.",
     tags: [
-      { name: "streamlit", color: "blue-text-gradient" },
-      { name: "prompt engineering", color: "green-text-gradient" },
-      { name: "modeling", color: "pink-text-gradient" },
-      { name: "OpenAI 4o & O1", color: "purple-text-gradient" },
+      { name: "LLM", color: "blue-text-gradient" },
+      { name: "Streamlit", color: "green-text-gradient" },
+      { name: "OpenAI 4o / o1", color: "pink-text-gradient" },
+      { name: "Prompt Engineering", color: "purple-text-gradient" },
+      { name: "UN Data", color: "orange-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Monthly-Python-News_Blue_Watermarked.f56ede474cc7.jpg",
     source_link: "https://united-nations-legacy.streamlit.app/",
-    source_code_link: "https://github.com/ZhaoJackson/United_Nations_Financial_Intelligence_Platform",
-  },
-  {
-    name: "PsyChat",
-    description:
-      "Clinical trial application for benchmark evaluation of AI responses in multi-turn conversations. Guides users to understand AI interaction patterns and resolve personal mental health issues through therapeutic AI assistance.",
-    tags: [
-      { name: "Clinical Trial", color: "blue-text-gradient" },
-      { name: "Azure OpenAI", color: "pink-text-gradient" },
-      { name: "Multi-Turn Conversations", color: "purple-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Requests-Library-Tutorial_Watermarked.3c9dfdc7b014.jpg",
-    source_link: "https://psychatbot.streamlit.app/",
-    source_code_link: "https://github.com/ZhaoJackson/PsyChat",
+    source_code_link:
+      "https://github.com/ZhaoJackson/United_Nations_Financial_Intelligence_Platform",
   },
   {
     name: "News Summary Generation",
     description:
-      "An AI-powered news summarization pipeline using LLMs to distill articles into concise summaries, featuring multi-source ingestion and automated content delivery.",
-    tags: [{ name: "streamlit", color: "blue-text-gradient" }],
+      "An LLM-based news summarization workflow that retrieves web information and generates concise summaries. The project focuses on turning long-form or fast-moving information into readable, structured outputs.",
+    tags: [
+      { name: "LLM", color: "blue-text-gradient" },
+      { name: "Chainlit", color: "green-text-gradient" },
+      { name: "Llama3", color: "pink-text-gradient" },
+      { name: "News Summarization", color: "purple-text-gradient" },
+    ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-3.14-1-Preview-Template-Strings_Watermarked.1071657a0531.jpg",
     source_code_link: "https://github.com/ZhaoJackson/News_Operator",
@@ -120,11 +88,12 @@ const llmProject = [
   {
     name: "Weather Forecast App",
     description:
-      "A Streamlit app that provides weather forecasts and AI-powered outfit recommendations using Llama3. Features 3-day weather forecasts, interactive dashboards, and intelligent clothing suggestions.",
+      "An AI-agent weather assistant that combines forecast data with Llama3-based outfit recommendations. The project demonstrates how LLMs can be connected with external data sources to generate useful everyday guidance.",
     tags: [
-      { name: "plotly", color: "blue-text-gradient" },
-      { name: "streamlit", color: "green-text-gradient" },
-      { name: "ai-agent", color: "pink-text-gradient" },
+      { name: "Llama3", color: "blue-text-gradient" },
+      { name: "AI Agent", color: "green-text-gradient" },
+      { name: "Streamlit", color: "pink-text-gradient" },
+      { name: "Plotly", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Factory-Method-Pattern-in-Python_Watermarked.6516a91d4d41.jpg",
@@ -137,11 +106,11 @@ const dataScienceAnalyticsProject = [
   {
     name: "Survey Panel Analytics",
     description:
-      "Interactive survey panel analytics dashboard with automated quality control pipeline. Built with R Shiny for demographic analysis, response density modeling, and real-time quality monitoring across 100+ survey projects.",
+      "An interactive survey analytics dashboard with quality-control and demographic monitoring features. Built to support survey research, respondent profiling, and business intelligence across large-scale panel data.",
     tags: [
-      { name: "airflow", color: "blue-text-gradient" },
-      { name: "Shiny", color: "green-text-gradient" },
-      { name: "panel analysis", color: "pink-text-gradient" },
+      { name: "R Shiny", color: "blue-text-gradient" },
+      { name: "Survey Analytics", color: "green-text-gradient" },
+      { name: "Quality Control", color: "pink-text-gradient" },
       { name: "Business Intelligence", color: "purple-text-gradient" },
     ],
     image:
@@ -150,13 +119,14 @@ const dataScienceAnalyticsProject = [
     source_code_link: "https://github.com/ZhaoJackson/Survey_Panel_Analytics",
   },
   {
-    name: "Weakly Supervised Learning with Imaging Classification",
+    name: "Weakly Supervised Learning with Image Classification",
     description:
-      "Weak supervised learning on image classification with noisy labels.",
+      "A computer vision project focused on image classification under noisy-label conditions. The project explores how models can learn from imperfect annotations and improve classification robustness.",
     tags: [
-      { name: "cifar-10", color: "blue-text-gradient" },
-      { name: "noisy labels", color: "green-text-gradient" },
-      { name: "image classification", color: "pink-text-gradient" },
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "CIFAR-10", color: "green-text-gradient" },
+      { name: "Noisy Labels", color: "pink-text-gradient" },
+      { name: "Image Classification", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
@@ -165,25 +135,28 @@ const dataScienceAnalyticsProject = [
   {
     name: "National Disaster Support Assistant",
     description:
-      "A FEMA Disaster Support Assistant with disaster information retrieval and response guidance for disaster scenario simulation and user interaction.",
+      "A disaster information dashboard and support assistant for emergency-response scenarios. The project organizes disaster-related information and provides user-facing guidance through an interactive Shiny interface.",
     tags: [
-      { name: "Shiny", color: "blue-text-gradient" },
-      { name: "Disaster Information Retrieval", color: "green-text-gradient" },
-      { name: "Disaster Response Guidance", color: "pink-text-gradient" },
+      { name: "R Shiny", color: "blue-text-gradient" },
+      { name: "Disaster Analytics", color: "green-text-gradient" },
+      { name: "Information Retrieval", color: "pink-text-gradient" },
+      { name: "Public Support", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Polars-LazyFrame_Watermarked.4a66e20e0eaf.jpg",
     source_link: "https://jacksonzzc.shinyapps.io/r_shiny_disaster_dashboard/",
-    source_code_link: "https://github.com/ZhaoJackson/National_Disaster_Support_Assistant",
+    source_code_link:
+      "https://github.com/ZhaoJackson/National_Disaster_Support_Assistant",
   },
   {
     name: "Algorithm Bias Mitigation Strategies",
     description:
-      "ML-based feature selection + conditional discrimination mitigation with unified evaluation and outputs.",
+      "A fairness-focused machine-learning project evaluating bias mitigation strategies such as preferential sampling and local massaging. The project connects model performance with fairness-aware evaluation.",
     tags: [
-      { name: "preferential sampling", color: "blue-text-gradient" },
-      { name: "local massaging", color: "green-text-gradient" },
-      { name: "compas score", color: "pink-text-gradient" },
+      { name: "Fairness", color: "blue-text-gradient" },
+      { name: "Bias Mitigation", color: "green-text-gradient" },
+      { name: "COMPAS", color: "pink-text-gradient" },
+      { name: "Machine Learning", color: "purple-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Set-Up-a-pyproject.toml-File-for-Your-Python-Project_Watermarked.51dc34160c1d.jpg",
@@ -192,17 +165,31 @@ const dataScienceAnalyticsProject = [
   {
     name: "Recycle Object Detection",
     description:
-      "Benchmarking and deploying computer vision models for object detection on recycling and waste videos using Roboflow API, OpenCV, and MoviePy.",
+      "A computer vision pipeline for detecting recycling and waste objects in videos. The project benchmarks object-detection models and applies tools such as Roboflow, OpenCV, MoviePy, and YOLOv8.",
     tags: [
-      { name: "computer vision", color: "blue-text-gradient" },
-      { name: "roboflow", color: "green-text-gradient" },
-      { name: "openCV", color: "purple-text-gradient" },
-      { name: "yolov8", color: "pink-text-gradient" },
+      { name: "Object Detection", color: "blue-text-gradient" },
+      { name: "Roboflow", color: "green-text-gradient" },
+      { name: "OpenCV", color: "purple-text-gradient" },
+      { name: "YOLOv8", color: "pink-text-gradient" },
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Missing-Data-in-Polars_Watermarked.2f1923ed31ad.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Recycling_Object_Detection_Pipeline",
+    source_code_link:
+      "https://github.com/ZhaoJackson/Recycling_Object_Detection_Pipeline",
+  },
+  {
+    name: "Air Gesture Plane Game",
+    description:
+      "A gesture-controlled computer vision game using real-time hand tracking. The project applies MediaPipe and OpenCV to translate body movement into interactive game control.",
+    tags: [
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "MediaPipe", color: "green-text-gradient" },
+      { name: "OpenCV", color: "pink-text-gradient" },
+      { name: "Gesture Control", color: "purple-text-gradient" },
+    ],
+    image:
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
+    source_code_link: "https://github.com/ZhaoJackson/Air_Gesture_Plane_Game",
   },
 ];
-
 export { list, mentalhealthAIProject, llmProject, dataScienceAnalyticsProject };

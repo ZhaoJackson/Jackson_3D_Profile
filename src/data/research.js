@@ -6,58 +6,116 @@ const research = [
     venue: "DePauw University · Department of Psychology",
     year: "2023",
     summary:
-      "This study found that while COVID-19 hindered STEM education, many students also reported unexpected gains in resilience, relationships, and mental health.",
+      "Examined how STEM students experienced COVID-19, highlighting both educational disruption and unexpected gains in resilience, relationships, and self-reflection.",
     link: "https://scholarship.depauw.edu/studentresearchother/55/",
     linkLabel: "Scholarly and Creative Work from DePauw University",
-    tags: ["Prof Advisor: Dr. Pamela Propsom"],
-  },
-  {
-    title: "Multi-Turn RL for On-Device Mental Health Agents",
-    status: "In Progress",
-    venue: "New York University Langone Health",
-    summary:
-      "Exploring hierarchical reinforcement learning (ArCHer framework) to train small language models for adaptive, multi-turn therapeutic dialogue and efficient on-device deployment.",
-    tags: ["Prof. Advisor: Dr. Zhe Chen"],
+    tags: ["Advisor: Dr. Pamela Propsom", "STEM Education", "Student Well-Being"],
   },
   {
     title:
-      "Evaluating Trust and Inclusivity: A Machine-Driven Benchmark for Large Language Model Chatbots in LGBTQ+ Suicide Prevention",
-    status: "Under Review",
-    venue: "Columbia University · Social Intervention Group",
-    year: "2025",
-    summary:
-      "This study introduces a machine-driven evaluation pipeline for assessing AI chatbots in LGBTQ+ suicide prevention, revealing significant variability in ethical alignment, inclusivity, and emotional intelligence across leading LLMs.",
-    tags: ["Algorithmic Benchmarking", "Suicide Prevention"],
-  },
-  {
-    title:
-      "Benchmarking AI Text Generation for Equity in Social Work: A Framework for Ethical and Inclusive Evaluation",
-    status: "In Progress",
-    venue: "Columbia University · Data Science Institute",
-    summary:
-      "This study introduces an AI benchmarking framework for social work that evaluates ethical alignment, inclusivity, and equity, revealing that traditional NLP metrics fail to capture ethical nuances in AI-generated text.",
-    tags: ["Rouge-L", "BLEU", "METEOR", "BERT"],
-  },
-  {
-    title:
-      "Don't Treat AI Chatbots like a Google Search: An Introduction to Prompt Engineering for Social Workers",
+      "Benchmarking Chatbot Responses in High-Stakes LGBTQ+ Suicide-Prevention Contexts: An Exploratory Audit of Alignment, Readability, and Language-Safety Signals",
     status: "Under Review",
     venue: "Columbia University · School of Social Work",
-    year: "2025",
+    year: "2026",
     summary:
-      "This study introduces a prompt engineering framework for social workers to use AI chatbots effectively and ethically.",
-    tags: ["Prof Advisor: Dr. Elwin Wu"],
+      "Developed an automated benchmark to compare LLM chatbot responses to LGBTQ+ suicide-prevention prompts using alignment, readability, sentiment, and language-safety signals.",
+    tags: [
+      "Advisor: Dr. Elwin Wu",
+      "Mental Health",
+      "Suicide Prevention",
+      "LLM Benchmarking",
+    ],
   },
   {
     title:
-      "A Scoping Review on the Application of Artificial Intelligence (AI) and Large Language Models (LLMs) in LGBTQ+ Health: Implications for Social Work Practice and Research",
-    status: "Under Review",
-    venue: "Columbia University · Journal of Technology in Human Services",
-    year: "2025",
+      "TheraMind: Multi-Turn Reinforcement Learning for On-Device Mental Health Agents",
+    status: "In Progress",
+    venue: "New York University Langone Health",
+    year: "2026",
     summary:
-      "This scoping review found that while empirical studies on LLMs remain limited, existing research reveals persistent biases in current models and growing efforts to develop more inclusive, affirming AI systems for mental support.",
-    tags: ["Prof Advisor: Dr. Elwin Wu"],
+      "Explores multi-turn reinforcement learning for adaptive, privacy-aware mental health agents that can run efficiently on-device.",
+    tags: [
+      "Advisor: Dr. Chen Sage Zhe",
+      "Reinforcement Learning",
+      "On-Device AI",
+      "Mental Health Agents",
+    ],
+  },
+  {
+    title:
+      "Self-Determination Needs and Acceptance of AI-Based Mental Health Interventions: A Cross-Cultural Study in China and the United States",
+    status: "In Progress",
+    venue: "NYU Shanghai, China",
+    year: "2026",
+    summary:
+      "Studies how autonomy, competence, and relatedness shape acceptance of AI-based mental health interventions across China and the United States.",
+    tags: [
+      "Advisor: Dr. Katie Aafjes-van Doorn, Dr. Vera Békés",
+      "AI Attitudes",
+      "Self-Determination Theory",
+      "Cross-Cultural Mental Health",
+    ],
+  },
+  {
+    title:
+      "Machine Benchmarking Experiments Using the NASW Code of Ethics Preamble",
+    status: "In Progress",
+    venue: "Columbia University · School of Social Work",
+    year: "2026",
+    summary:
+      "Benchmarks AI-generated social work responses against the NASW Code of Ethics Preamble to assess ethical language and professional-value alignment.",
+    tags: [
+      "Advisor: Dr. Elwin Wu",
+      "NASW Code of Ethics",
+      "Social Work AI",
+      "Machine Benchmarking",
+    ],
+  },
+  {
+    title:
+      "Benchmarking Synthetic EEG Data for Cocaine Use Disorder Research: A Machine-Learning Pipeline for Realism, Utility, and Effect Preservation",
+    status: "In Progress",
+    venue: "Icahn School of Medicine at Mount Sinai",
+    year: "2026",
+    summary:
+      "Evaluates whether synthetic EEG data for cocaine use disorder can preserve neural realism, machine-learning utility, and clinically relevant effects.",
+    tags: [
+      "Advisor: Dr. Muhammad Parvaz",
+      "EEG",
+      "Cocaine Use Disorder",
+      "Synthetic Data",
+      "Brain Science",
+    ],
+  },
+  {
+    title:
+      "BiAffect Digital Phenotyping and Suicidality Among Children and Adolescents",
+    status: "In Progress",
+    venue: "NYU Langone Health",
+    year: "2026",
+    summary:
+      "Links BiAffect keyboard and mobile-sensing features with suicidality outcomes to study digital markers of youth mental health risk.",
+    tags: [
+      "Advisor: Dr. Anna Van Meter",
+      "BiAffect",
+      "Digital Phenotyping",
+      "Adolescent Suicidality",
+    ],
+  },
+  {
+    title:
+      "Electronic Health Records, Adolescent Suicidality, and Parent-Reported Risk Signals",
+    status: "In Progress",
+    venue: "NYU Langone Health",
+    year: "2026",
+    summary:
+      "Uses EHR and parent-reported indicators to study clinically meaningful risk signals for adolescent suicidality.",
+    tags: [
+      "Advisor: Dr. Anna Van Meter",
+      "EHR",
+      "Adolescent Mental Health",
+      "Suicide Risk",
+    ],
   },
 ];
-
 export { research };

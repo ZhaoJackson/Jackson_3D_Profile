@@ -11,8 +11,9 @@ const focusAreas = [
   "Mental Health AI",
   "LLM Fine-Tuning",
   "Responsible AI",
-  "Data Science",
-  "Social Impact Tech",
+  "Brain Science",
+  "Neuroscience",
+  "Brain-Computer Interfaces",
 ];
 
 const About = () => {
