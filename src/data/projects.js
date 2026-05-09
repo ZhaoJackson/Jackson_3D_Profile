@@ -19,7 +19,21 @@ const mentalhealthAIProject = [
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Requests-Library-Tutorial_Watermarked.3c9dfdc7b014.jpg",
     source_link: "https://psychatbot.streamlit.app/",
-    source_code_link: "https://github.com/ZhaoJackson/PsyChat",
+    source_code_link: "https://github.com/zichenzha0/PsyChat",
+  },
+  {
+    name: "Human VS AI Game",
+    description:
+      "An interactive Turing Test game that challenges users to distinguish between human and AI-generated responses. A gamified mental health awareness tool exploring how people perceive AI in emotionally sensitive conversations.",
+    tags: [
+      { name: "Turing Test", color: "blue-text-gradient" },
+      { name: "Mental Health Awareness", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Interactive Game", color: "purple-text-gradient" },
+    ],
+    image:
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Modern-Web-Automation-With-Python-and-Selenium_Watermarked.08e8e08b976d.jpg",
+    source_code_link: "https://github.com/zichenzha0/Human_VS_AI_Game",
   },
   {
     name: "J . A . R . V . I . S",
@@ -33,8 +47,8 @@ const mentalhealthAIProject = [
       { name: "Affective Computing", color: "purple-text-gradient" },
     ],
     image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Modern-Web-Automation-With-Python-and-Selenium_Watermarked.08e8e08b976d.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/J.A.R.V.I.S",
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Factory-Method-Pattern-in-Python_Watermarked.6516a91d4d41.jpg",
+    source_code_link: "https://github.com/zichenzha0/J.A.R.V.I.S",
   },
   {
     name: "MBTI Personality Analysis",
@@ -48,7 +62,7 @@ const mentalhealthAIProject = [
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/code_quality_img.73eae557a204.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/MBTI_Mental_Health",
+    source_code_link: "https://github.com/zichenzha0/MBTI_Mental_Health",
   },
 ];
 
@@ -69,7 +83,7 @@ const llmProject = [
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Monthly-Python-News_Blue_Watermarked.f56ede474cc7.jpg",
     source_link: "https://united-nations-legacy.streamlit.app/",
     source_code_link:
-      "https://github.com/ZhaoJackson/United_Nations_Financial_Intelligence_Platform",
+      "https://github.com/zichenzha0/United_Nations_Financial_Intelligence_Platform",
   },
   {
     name: "News Summary Generation",
@@ -83,7 +97,7 @@ const llmProject = [
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-3.14-1-Preview-Template-Strings_Watermarked.1071657a0531.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/News_Operator",
+    source_code_link: "https://github.com/zichenzha0/News_Operator",
   },
   {
     name: "Weather Forecast App",
@@ -97,12 +111,40 @@ const llmProject = [
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Factory-Method-Pattern-in-Python_Watermarked.6516a91d4d41.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Personal_Weather_Report",
+    source_code_link: "https://github.com/zichenzha0/Personal_Weather_Report",
   },
 ];
 
 // ====== Data Science & Analytics Projects ======
 const dataScienceAnalyticsProject = [
+  {
+    name: "OCR Text Extractor",
+    description:
+      "A text extraction web application built with React and Ant Design, powered by an n8n workflow with an optional Node/Express API backend. Converts images and documents into structured, editable text using optical character recognition.",
+    tags: [
+      { name: "OCR", color: "blue-text-gradient" },
+      { name: "React", color: "green-text-gradient" },
+      { name: "n8n", color: "pink-text-gradient" },
+      { name: "Node/Express", color: "purple-text-gradient" },
+    ],
+    image:
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Python-Print-Function_Watermarked.26066d64ad82.jpg",
+    source_code_link: "https://github.com/zichenzha0/OCR_Text_Extractor",
+  },
+  {
+    name: "Air Gesture Plane Game",
+    description:
+      "A gesture-controlled computer vision game using real-time hand tracking. The project applies MediaPipe and OpenCV to translate body movement into interactive game control, featuring space shooter and aviation combat modes.",
+    tags: [
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "MediaPipe", color: "green-text-gradient" },
+      { name: "OpenCV", color: "pink-text-gradient" },
+      { name: "Gesture Control", color: "purple-text-gradient" },
+    ],
+    image:
+      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
+    source_code_link: "https://github.com/zichenzha0/Air_Gesture_Plane_Game",
+  },
   {
     name: "Survey Panel Analytics",
     description:
@@ -116,7 +158,7 @@ const dataScienceAnalyticsProject = [
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Python-Print-Function_Watermarked.26066d64ad82.jpg",
     source_link: "https://jacksonzzc.shinyapps.io/verasight-panel-insights/",
-    source_code_link: "https://github.com/ZhaoJackson/Survey_Panel_Analytics",
+    source_code_link: "https://github.com/zichenzha0/Survey_Panel_Analytics",
   },
   {
     name: "Weakly Supervised Learning with Image Classification",
@@ -130,7 +172,7 @@ const dataScienceAnalyticsProject = [
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Image-classification-Project",
+    source_code_link: "https://github.com/zichenzha0/Image-classification-Project",
   },
   {
     name: "National Disaster Support Assistant",
@@ -146,7 +188,7 @@ const dataScienceAnalyticsProject = [
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Polars-LazyFrame_Watermarked.4a66e20e0eaf.jpg",
     source_link: "https://jacksonzzc.shinyapps.io/r_shiny_disaster_dashboard/",
     source_code_link:
-      "https://github.com/ZhaoJackson/National_Disaster_Support_Assistant",
+      "https://github.com/zichenzha0/National_Disaster_Support_Assistant",
   },
   {
     name: "Algorithm Bias Mitigation Strategies",
@@ -160,7 +202,7 @@ const dataScienceAnalyticsProject = [
     ],
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Set-Up-a-pyproject.toml-File-for-Your-Python-Project_Watermarked.51dc34160c1d.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Algorithm_Bias_Mitigation",
+    source_code_link: "https://github.com/zichenzha0/Algorithm_Bias_Mitigation",
   },
   {
     name: "Recycle Object Detection",
@@ -175,21 +217,7 @@ const dataScienceAnalyticsProject = [
     image:
       "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Work-with-Missing-Data-in-Polars_Watermarked.2f1923ed31ad.jpg",
     source_code_link:
-      "https://github.com/ZhaoJackson/Recycling_Object_Detection_Pipeline",
-  },
-  {
-    name: "Air Gesture Plane Game",
-    description:
-      "A gesture-controlled computer vision game using real-time hand tracking. The project applies MediaPipe and OpenCV to translate body movement into interactive game control.",
-    tags: [
-      { name: "Computer Vision", color: "blue-text-gradient" },
-      { name: "MediaPipe", color: "green-text-gradient" },
-      { name: "OpenCV", color: "pink-text-gradient" },
-      { name: "Gesture Control", color: "purple-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Control-Flow-Structures-in-Python_Watermarked-2.333650ffaf49.jpg",
-    source_code_link: "https://github.com/ZhaoJackson/Air_Gesture_Plane_Game",
+      "https://github.com/zichenzha0/Recycling_Object_Detection_Pipeline",
   },
 ];
 export { list, mentalhealthAIProject, llmProject, dataScienceAnalyticsProject };

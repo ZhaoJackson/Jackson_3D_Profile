@@ -79,7 +79,7 @@ const Hero = () => {
 
           {/* Social links */}
           <div className="link1 mt-4">
-            <a href="https://github.com/ZhaoJackson" target="_blank" rel="noreferrer">
+            <a href="https://github.com/zichenzha0" target="_blank" rel="noreferrer">
               <AiOutlineGithub />
             </a>
             <a href="https://www.linkedin.com/in/jaxonzhao/" target="_blank" rel="noreferrer">

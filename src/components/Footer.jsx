@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer text-center">
         <p> 
           &#x3c;&#47;&#x3e; with ❤️ by
-          <a href="https://github.com/ZhaoJackson" target="_blank">
+          <a href="https://github.com/zichenzha0" target="_blank">
             {" "}
             Jackson Zhao
           </a>
