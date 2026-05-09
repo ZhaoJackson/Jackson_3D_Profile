@@ -22,20 +22,6 @@ const mentalhealthAIProject = [
     source_code_link: "https://github.com/zichenzha0/PsyChat",
   },
   {
-    name: "Human VS AI Game",
-    description:
-      "An interactive Turing Test game that challenges users to distinguish between human and AI-generated responses. A gamified mental health awareness tool exploring how people perceive AI in emotionally sensitive conversations.",
-    tags: [
-      { name: "Turing Test", color: "blue-text-gradient" },
-      { name: "Mental Health Awareness", color: "green-text-gradient" },
-      { name: "JavaScript", color: "pink-text-gradient" },
-      { name: "Interactive Game", color: "purple-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Modern-Web-Automation-With-Python-and-Selenium_Watermarked.08e8e08b976d.jpg",
-    source_code_link: "https://github.com/zichenzha0/Human_VS_AI_Game",
-  },
-  {
     name: "J . A . R . V . I . S",
     description:
       "A personal AI assistant exploring emotion-aware support through mood analysis, music recommendation, philosophical reflection, and conversational interaction. The project connects AI agents with daily mental wellness and affective computing ideas.",
@@ -117,20 +103,6 @@ const llmProject = [
 
 // ====== Data Science & Analytics Projects ======
 const dataScienceAnalyticsProject = [
-  {
-    name: "OCR Text Extractor",
-    description:
-      "A text extraction web application built with React and Ant Design, powered by an n8n workflow with an optional Node/Express API backend. Converts images and documents into structured, editable text using optical character recognition.",
-    tags: [
-      { name: "OCR", color: "blue-text-gradient" },
-      { name: "React", color: "green-text-gradient" },
-      { name: "n8n", color: "pink-text-gradient" },
-      { name: "Node/Express", color: "purple-text-gradient" },
-    ],
-    image:
-      "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/The-Python-Print-Function_Watermarked.26066d64ad82.jpg",
-    source_code_link: "https://github.com/zichenzha0/OCR_Text_Extractor",
-  },
   {
     name: "Air Gesture Plane Game",
     description:

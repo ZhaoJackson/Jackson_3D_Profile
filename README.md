@@ -4,7 +4,7 @@ A modern, immersive 3D portfolio website showcasing my work as a Data Scientist,
 
 ## Live Demo
 
-**[View Live Portfolio](https://zichenzha0.github.io/portfolio/)** — Deployed on GitHub Pages
+**[View Live Portfolio](https://zichenzha0.github.io/portfolio/)**
 
 ## About Me
 
