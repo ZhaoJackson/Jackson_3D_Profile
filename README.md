@@ -1,8 +1,10 @@
 # Jackson Zhao Portfolio
 
+A modern, immersive 3D portfolio website showcasing my work as a Data Scientist, AI Researcher, and Brain-Computer Interface enthusiast. Built with React, Three.js, and cutting-edge web technologies.
+
 ## Live Demo
 
-**[View Live Portfolio](https://zichenzha0.github.io/Jackson_3D_Profile/)** — Deployed on GitHub Pages
+**[View Live Portfolio](https://zichenzha0.github.io/portfolio/)** — Deployed on GitHub Pages
 
 ## About Me
 
