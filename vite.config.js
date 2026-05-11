@@ -14,5 +14,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 100000000,
   },
-  base: process.env.NODE_ENV === 'production' ? "/portfolio/" : "/",
+  base: process.env.CF_PAGES ? '/' : '/portfolio/',
 })
