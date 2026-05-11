@@ -40,7 +40,7 @@ const technologies = [
 
   // Development Tools
   { name: "n8n", icon: "https://n8n.io/favicon.ico" },
-  { name: "REST API", icon: "https://restfulapi.net/wp-content/uploads/rest.png" },
+  { name: "REST API", icon: "/rest.png" },
   { name: "RAG", icon: rag },
   { name: "Streamlit", icon: streamlit },
   { name: "Vercel", icon: vercel },
