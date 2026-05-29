@@ -1,7 +1,7 @@
 import {
   flask, fastapi, bitbucket, airflow, langchain, ollama, rag, streamlit,
   vercel, retool, chainlit, roboflow, tg, tableau, powerbi, spss, excel,
-  anova,
+  anova, rest,
 } from "../assets";
 
 const technologies = [
@@ -40,7 +40,7 @@ const technologies = [
 
   // Development Tools
   { name: "n8n", icon: "https://n8n.io/favicon.ico" },
-  { name: "REST API", icon: "/rest.png" },
+  { name: "REST API", icon: rest },
   { name: "RAG", icon: rag },
   { name: "Streamlit", icon: streamlit },
   { name: "Vercel", icon: vercel },

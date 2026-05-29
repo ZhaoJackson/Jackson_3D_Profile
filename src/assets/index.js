@@ -47,6 +47,7 @@ import sp from "./sp.png";
 import eeg from "./eeg.png";
 import siop from "./siop.png";
 import pp from "./pp.png";
+import rest from "./rest.png";
 
 export {
   logo,
@@ -92,4 +93,5 @@ export {
   eeg,
   siop,
   pp,
+  rest,
 };

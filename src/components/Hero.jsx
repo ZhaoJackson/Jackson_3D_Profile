@@ -82,7 +82,7 @@ const Hero = () => {
             <a href="https://github.com/zichenzha0" target="_blank" rel="noreferrer">
               <AiOutlineGithub />
             </a>
-            <a href="https://www.linkedin.com/in/jaxonzhao/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/zichenzha0/" target="_blank" rel="noreferrer">
               <ImLinkedin />
             </a>
             <a href="https://www.instagram.com/jackson_zhao_/" target="_blank" rel="noreferrer">
