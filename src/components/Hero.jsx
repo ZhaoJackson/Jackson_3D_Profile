@@ -70,7 +70,10 @@ const Hero = () => {
   return (
     <section
       className="hero-section relative w-full mx-auto overflow-hidden"
-      style={{ minHeight: '100vh', height: isMobile ? 'auto' : '100vh' }}
+      style={isMobile
+        ? { height: 'auto', minHeight: 0 }
+        : { height: '100vh', minHeight: '100vh' }
+      }
     >
       {/* ── Profile picture (absolute, always top-right) ── */}
       <div className="imgcontainer1 absolute violet-gradient" style={{ zIndex: 2 }}>

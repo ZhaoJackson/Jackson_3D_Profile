@@ -12,7 +12,12 @@
 
 /* ── Hero section ──────────────────────────────────── */
 .hero-section {
-  min-height: 100vh;
+  min-height: 100vh;   // desktop: full-screen
+
+  @include mobile1 {   // ≤640px: height driven by content only
+    min-height: 0;
+    height: auto;
+  }
 }
 
 /* ── Text block ────────────────────────────────────── */
