@@ -10,25 +10,25 @@ import CanvasLoader from "../Loader";
    screen size without hunting through the JSX.
    ───────────────────────────────────────────────────────── */
 
-// Model scale — mobile is slightly smaller to fit the 300 px container
-const MOBILE_SCALE    = 0.002;   // ← mobile Iron Man size
+// Model scale
+const MOBILE_SCALE    = 0.00165;  // ← mobile Iron Man size
 const DESKTOP_SCALE   = 0.0018;   // desktop Iron Man size (unchanged)
 
-// Model position — mobile lifted so the upper body is centred in view
-const MOBILE_POSITION  = [0, 1.8, 0];  // ← mobile vertical position (y)
-const DESKTOP_POSITION = [0, -3.9, 0];  // desktop position (unchanged)
+// Model position — keep Y negative so the model stays in camera view
+const MOBILE_POSITION  = [0, -2.45, 0]; // ← mobile vertical position (y)
+const DESKTOP_POSITION = [0, -3.9,  0]; // desktop position (unchanged)
 
-// Camera — mobile pulled back slightly and raised to frame the upper body
-const MOBILE_CAMERA_POS  = [0, 0.55, 5.5]; // ← mobile camera [x, y, z]
-const DESKTOP_CAMERA_POS = [0, 0, 5];       // desktop camera (unchanged)
+// Camera — mobile pulled slightly further back and raised for upper-body framing
+const MOBILE_CAMERA_POS  = [0, 0.35, 6.8]; // ← mobile camera [x, y, z]
+const DESKTOP_CAMERA_POS = [0, 0,    5];    // desktop camera (unchanged)
 
-// Field of view — narrower gives a tighter telephoto look
-const MOBILE_FOV   = 24;   // ← mobile camera zoom (lower = more zoomed in)
-const DESKTOP_FOV  = 25;   // desktop FOV (unchanged)
+// Field of view
+const MOBILE_FOV   = 27;  // ← mobile camera zoom (lower = more zoomed in)
+const DESKTOP_FOV  = 25;  // desktop FOV (unchanged)
 
 // Device pixel ratio — higher = sharper rendering
-const MOBILE_DPR   = [1.5, 2];    // ← mobile sharpness/quality
-const DESKTOP_DPR  = [1, 1.5];    // desktop DPR (unchanged)
+const MOBILE_DPR   = [1.5, 2];   // ← mobile sharpness/quality
+const DESKTOP_DPR  = [1, 1.5];   // desktop DPR (unchanged)
 
 /* ───────────────────────────────────────────────────────── */
 

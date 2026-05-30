@@ -142,8 +142,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Full-section background canvas */}
-          <ComputersCanvas />
+          {/* Full-section background canvas.
+              Explicit z-index: 0 creates a stacking context that sits
+              below any position:fixed overlay (navbar, music button, etc.)
+              which use z-index ≥ 50.  pointer-events remain auto so
+              OrbitControls still lets users rotate the model. */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+            <ComputersCanvas />
+          </div>
         </>
       )}
     </section>
