@@ -85,8 +85,8 @@ const Computers = ({ isMobile }) => {
       
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.1 : 0.0018}
-        position={isMobile ? [0, -3.8, 0] : [0, -3.9, 0]}
+        scale={isMobile ? 0.002 : 0.0018}
+        position={isMobile ? [0, -3.5, 0] : [0, -3.9, 0]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -121,18 +121,19 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop='always'
       shadows
-      dpr={[1, 1.5]}
-      camera={{ position: [0, 0, 5], fov: 25 }}
+      dpr={[1, isMobile ? 1 : 1.5]}
+      camera={{ position: [0, 0, 5], fov: isMobile ? 30 : 25 }}
       gl={{ preserveDrawingBuffer: true, antialias: false }}
+      style={isMobile ? { pointerEvents: 'none' } : undefined}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           enablePan={false}
-          enableRotate={true}
+          enableRotate={!isMobile}
           autoRotate={true}
           autoRotateSpeed={1}
-          enableDamping={true}
+          enableDamping={!isMobile}
           dampingFactor={0.05}
           minDistance={5}
           maxDistance={5}

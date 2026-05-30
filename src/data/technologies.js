@@ -39,7 +39,7 @@ const technologies = [
   { name: "PyTorch", icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
 
   // Development Tools
-  { name: "n8n", icon: "https://n8n.io/favicon.ico" },
+  { name: "n8n", icon: "https://cdn.simpleicons.org/n8n" },
   { name: "REST API", icon: rest },
   { name: "RAG", icon: rag },
   { name: "Streamlit", icon: streamlit },

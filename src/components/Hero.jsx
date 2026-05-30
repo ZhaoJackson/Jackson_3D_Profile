@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { init } from 'ityped';
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
 import { ImLinkedin } from "react-icons/im";
 import { BiLinkAlt } from "react-icons/bi";
@@ -11,7 +11,6 @@ import "./Hero.scss";
 
 const Hero = () => {
   const textRef  = useRef();
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     init(textRef.current, {
@@ -27,14 +26,6 @@ const Hero = () => {
         ' Biomedical Engineer',
       ],
     });
-  }, []);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
   }, []);
 
   return (
@@ -95,8 +86,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ── 3-D model: desktop only ── */}
-      {!isMobile && <ComputersCanvas />}
+      {/* ── 3-D model: all screen sizes ── */}
+      <ComputersCanvas />
 
     </section>
   );
