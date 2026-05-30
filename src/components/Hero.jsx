@@ -80,7 +80,7 @@ const Hero = () => {
       {isMobile ? (
         /* ════════════════════════════════════════════════
            MOBILE LAYOUT
-           Flow layout: text → social links → 3-D canvas
+           Flow layout: text → social links
            ════════════════════════════════════════════════ */
         <div className="hero-mobile-content" style={{ position: 'relative', zIndex: 2 }}>
           <div className="flex flex-row items-start gap-4">
@@ -106,10 +106,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* 3-D model — controlled height, below social links, no scroll interference */}
-          <div className="hero-mobile-canvas-wrap">
-            <ComputersCanvas />
-          </div>
         </div>
       ) : (
         /* ════════════════════════════════════════════════

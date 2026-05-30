@@ -93,19 +93,6 @@
   }
 }
 
-/* ── Mobile 3-D canvas wrapper ──────────────────────── */
-.hero-mobile-canvas-wrap {
-  width: 100%;
-  height: 300px;      /* ← adjust mobile canvas height here */
-  margin-top: 0.75rem;
-  pointer-events: none;   /* pass touch events to page for scroll */
-  position: relative;
-  z-index: 1;
-
-  @include mobile {   // ≤480px
-    height: 260px;
-  }
-}
 
 /* ── Profile picture ───────────────────────────────── */
 .imgcontainer1 {
