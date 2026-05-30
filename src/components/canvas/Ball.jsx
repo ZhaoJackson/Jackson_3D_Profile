@@ -53,11 +53,11 @@ const BallCanvas = ({ icon }) => {
     <BallErrorBoundary>
       <Canvas
         frameloop='always'
-        dpr={[1, 1.5]}
-        gl={{ 
+        dpr={[1, 2]}
+        gl={{
           preserveDrawingBuffer: true,
-          antialias: false,
-          powerPreference: "high-performance"
+          antialias: true,
+          powerPreference: "high-performance",
         }}
       >
         <Suspense fallback={<CanvasLoader />}>
