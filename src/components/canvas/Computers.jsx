@@ -11,15 +11,15 @@ import CanvasLoader from "../Loader";
    ───────────────────────────────────────────────────────── */
 
 // Model scale — mobile is slightly smaller to fit the 300 px container
-const MOBILE_SCALE    = 0.00175;   // ← mobile Iron Man size
+const MOBILE_SCALE    = 0.002;   // ← mobile Iron Man size
 const DESKTOP_SCALE   = 0.0018;   // desktop Iron Man size (unchanged)
 
 // Model position — mobile lifted so the upper body is centred in view
-const MOBILE_POSITION  = [0, -1.95, 0];  // ← mobile vertical position (y)
+const MOBILE_POSITION  = [0, 1.8, 0];  // ← mobile vertical position (y)
 const DESKTOP_POSITION = [0, -3.9, 0];  // desktop position (unchanged)
 
 // Camera — mobile pulled back slightly and raised to frame the upper body
-const MOBILE_CAMERA_POS  = [0, 0.55, 6.2]; // ← mobile camera [x, y, z]
+const MOBILE_CAMERA_POS  = [0, 0.55, 5.5]; // ← mobile camera [x, y, z]
 const DESKTOP_CAMERA_POS = [0, 0, 5];       // desktop camera (unchanged)
 
 // Field of view — narrower gives a tighter telephoto look
